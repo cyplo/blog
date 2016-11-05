@@ -1,0 +1,18 @@
+|image0| |image1| |image2| |image3| |image4| |image5| |image6| |image7|
+
+.. |image0| image:: /wp-content/uploads/2012/12/IMG_0478-150x150.jpg
+   :target: /wp-content/uploads/2012/12/IMG_0478.jpg
+.. |image1| image:: /wp-content/uploads/2012/12/IMG_0481-150x150.jpg
+   :target: /wp-content/uploads/2012/12/IMG_0481.jpg
+.. |image2| image:: /wp-content/uploads/2012/12/IMG_0484-150x150.jpg
+   :target: /wp-content/uploads/2012/12/IMG_0484.jpg
+.. |image3| image:: /wp-content/uploads/2012/12/IMG_0485-150x150.jpg
+   :target: /wp-content/uploads/2012/12/IMG_0485.jpg
+.. |image4| image:: /wp-content/uploads/2012/12/IMG_0488-150x150.jpg
+   :target: /wp-content/uploads/2012/12/IMG_0488.jpg
+.. |image5| image:: /wp-content/uploads/2012/12/IMG_0490-150x150.jpg
+   :target: /wp-content/uploads/2012/12/IMG_0490.jpg
+.. |image6| image:: /wp-content/uploads/2012/12/IMG_0491-150x150.jpg
+   :target: /wp-content/uploads/2012/12/IMG_0491.jpg
+.. |image7| image:: /wp-content/uploads/2012/12/IMG_0493-150x150.jpg
+   :target: /wp-content/uploads/2012/12/IMG_0493.jpg

@@ -1,0 +1,13 @@
+I'm writing this on the beginning of the day 2 of 30C3, as day 1 was so
+packed with action that I was not able to sit down and type, not even
+for a little while. First of all - Glen Greenwald. Yep. `Glen
+Greenwald's keynote <https://www.youtube.com/watch?v=gyA6NZ9C9pM>`__ was
+moving the crowd, making the audience interrupt him with rounds of
+applause every few minutes. Lots of mobile phone network exploitation
+talks along with general anti-buffer-overflow techniques. `Tor guys
+talking about the interesting
+times <https://www.youtube.com/watch?v=CJNxbpbHA-I>`__ we live in. Quite
+a day. `Here`_  are some photos, with no Congress people, except for me, in
+them, as the tradition goes. 
+
+.. _Here: /galleries/30C3/
