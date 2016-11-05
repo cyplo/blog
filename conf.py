@@ -131,10 +131,11 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-            ('/index.html', 'Home', 'icon-home'),
-            ('/archive.html', 'Archives', 'icon-folder-open-alt'),
-            ('/categories/index.html', 'Tags', 'icon-tags'),
-            ('/rss.xml', 'RSS', 'icon-rss')
+            ('/index.html', 'Home', 'fa-home fa-4x fa'),
+            ('/archive.html', 'Archives', 'fa-folder-open fa-3x fa'),
+            ('/categories/index.html', 'Tags', 'fa-tags fa-3x fa'),
+            ('/hosted-here/', 'Files', 'fa-files-o fa-3x fa'),
+            ('/rss.xml', 'RSS', 'fa-rss fa-3x fa')
     ),
 }
 
