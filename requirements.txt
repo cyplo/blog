@@ -1,0 +1,5 @@
+pygments-style-solarized
+ws4py
+watchdog
+webassets
+Nikola

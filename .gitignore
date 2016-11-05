@@ -1,0 +1,7 @@
+*.pyc
+output/*
+cache/*
+__pycache__/*
+.doit.db
+state_data.json
+
