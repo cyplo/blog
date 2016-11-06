@@ -131,10 +131,11 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-            ('/index.html', 'Home', 'icon-home'),
-            ('/archive.html', 'Archives', 'icon-folder-open-alt'),
-            ('/categories/index.html', 'Tags', 'icon-tags'),
-            ('/rss.xml', 'RSS', 'icon-rss')
+            ('/index.html', 'Home', 'fa-home fa-4x fa'),
+            ('/archive.html', 'Archives', 'fa-folder-open fa-3x fa'),
+            ('/categories/index.html', 'Tags', 'fa-tags fa-3x fa'),
+            ('/hosted-here/', 'Files', 'fa-files-o fa-3x fa'),
+            ('/rss.xml', 'RSS', 'fa-rss fa-3x fa')
     ),
 }
 
@@ -818,15 +819,11 @@ FEED_LINKS_APPEND_QUERY = False
 # LICENSE = ""
 # I recommend using the Creative Commons' wizard:
 # https://creativecommons.org/choose/
-LICENSE = """
-<br />Contents on of this blog are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. <br /> """
+LICENSE = """<br />Contents on of this blog are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. <br />"""
 
 # A small copyright notice for the page footer (in HTML).
 # (translatable)
-CONTENT_FOOTER = """
-{license}
-Original author <a href="mailto:{email}">{author}</a>
-"""
+CONTENT_FOOTER = """{license}"""
 
 # Things that will be passed to CONTENT_FOOTER.format().  This is done
 # for translatability, as dicts are not formattable.  Nikola will
