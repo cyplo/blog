@@ -135,6 +135,8 @@ NAVIGATION_LINKS = {
             ('/archive.html', 'Archives', 'fa-folder-open fa-3x fa'),
             ('/categories/index.html', 'Tags', 'fa-tags fa-3x fa'),
             ('/hosted-here/', 'Files', 'fa-files-o fa-3x fa'),
+            ('https://twitter.com/cyplo', 'My Twitter', 'fa-twitter fa-3x fa'),
+            ('https://github.com/cyplo', 'My Github', 'fa-github fa-3x fa'),
             ('/rss.xml', 'RSS', 'fa-rss fa-3x fa')
     ),
 }
