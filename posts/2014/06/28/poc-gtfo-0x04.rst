@@ -1,2 +1,2 @@
 No need to re-introduce PoC or GTFO here. Just
-`download </hosted-here/>`__ it already !
+`download </files.html>`__ it already !
