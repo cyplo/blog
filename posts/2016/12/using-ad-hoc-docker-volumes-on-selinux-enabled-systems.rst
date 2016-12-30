@@ -14,9 +14,9 @@ I've recently tried running some quick Docker commands using host's directory as
     docker run -i -t -v `pwd`:/mnt debian:jessie bash -c "ls -hal /mnt"
     ls: cannot open directory /mnt: Permission denied
 
-I use Fedora as my main OS which, it turns out, has some pretty nice SELinux settings which deny the access from inside the container to the outside.
-Said Fedora consists mostly of almost-newest-but-stable everything though, which makes Docker be in a fairly recent version.
-A version that understands how to change a SELinux context for the directory we're mounting itself ! 
+I use Fedora as my main OS, which, it turns out, has some pretty nice SELinux settings. These deny access from inside the container to the outside.
+Said Fedora consists mostly of almost-newest-but-stable everything though, which makes Docker to be in a fairly recent version.
+A version that understands how to change a SELinux context for the directory we're mounting, by itself ! 
 You need at least Docker v1.7 for this.
 
 .. code-block:: console
