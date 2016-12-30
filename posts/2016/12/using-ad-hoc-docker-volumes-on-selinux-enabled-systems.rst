@@ -1,5 +1,5 @@
-.. title: Using ad hoc Docker volumes on SELinux-enabled systems
-.. slug: using-ad-hoc-docker-volumes-on-selinux-enabled-systems
+.. title: Using ad hoc Docker volumes on SELinux systems
+.. slug: ad-hoc-docker-volumes-selinux
 .. date: 2016-12-30 18:28:50 UTC
 .. tags: docker, volume, permissions, selinux, container, data
 .. category: containers
