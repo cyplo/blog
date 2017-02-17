@@ -133,7 +133,6 @@ NAVIGATION_LINKS = {
     DEFAULT_LANG: (
             ('/index.html', 'Home', 'fa-home fa-4x fa'),
             ('/archive.html', 'Archives', 'fa-folder-open fa-3x fa'),
-            ('/categories/index.html', 'Tags', 'fa-tags fa-3x fa'),
             ('/files.html', 'Files', 'fa-files-o fa-3x fa'),
             ('/about.html', 'About me', 'fa-user fa-3x fa'),
             ('https://twitter.com/cyplo', 'My Twitter', 'fa-twitter fa-3x fa'),
