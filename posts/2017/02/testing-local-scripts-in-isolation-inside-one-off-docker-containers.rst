@@ -1,10 +1,8 @@
-.. title: Testing local scripts in isolation inside one-off Docker containers
-.. slug: testing-local-scripts-in-isolation-inside-one-off-docker-containers
+.. title: Running host programs in isolation inside one-off Docker containers
+.. slug: one-off-docker-runjessie
 .. date: 2017-02-17 22:08:46 UTC
-.. tags: 
-.. category: 
-.. link: 
-.. description: 
+.. tags: docker, linux, jessie, container
+.. category: containers
 .. type: text
 
 I am quite bad at remembering how to launch docker to have everything set up correctly. Hence the following - a script that launches any commandline specified in its arguments inside a new docker container. Current directory is mounted inside the container automatically, so the thing you are executing can have its local dependencies satisfied.
