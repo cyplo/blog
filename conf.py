@@ -28,60 +28,6 @@ SITE_URL = "https://blog.cyplo.net/"
 BLOG_EMAIL = "blog@cyplo.net"
 BLOG_DESCRIPTION = "Boldly go where no programmer has gone before."  # (translatable)
 
-# Nikola is multilingual!
-#
-# Currently supported languages are:
-#
-# en        English
-# ar        Arabic
-# az        Azerbaijani
-# bg        Bulgarian
-# bs        Bosnian
-# ca        Catalan
-# cs        Czech [ALTERNATIVELY cz]
-# da        Danish
-# de        German
-# el        Greek [NOT gr]
-# eo        Esperanto
-# es        Spanish
-# et        Estonian
-# eu        Basque
-# fa        Persian
-# fi        Finnish
-# fr        French
-# gl        Galician
-# hi        Hindi
-# hr        Croatian
-# hu        Hungarian
-# id        Indonesian
-# it        Italian
-# ja        Japanese [NOT jp]
-# ko        Korean
-# lt        Lithuanian
-# nb        Norwegian (Bokmål)
-# nl        Dutch
-# pa        Punjabi
-# pl        Polish
-# pt        Portuguese
-# pt_br     Portuguese (Brazil)
-# ru        Russian
-# sk        Slovak
-# sl        Slovene
-# sq        Albanian
-# sr        Serbian (Cyrillic)
-# sr_latin  Serbian (Latin)
-# sv        Swedish
-# tr        Turkish [NOT tr_TR]
-# uk        Ukrainian
-# ur        Urdu
-# zh_cn     Chinese (Simplified)
-#
-# If you want to use Nikola with a non-supported language you have to provide
-# a module containing the necessary translations
-# (cf. the modules at nikola/data/themes/base/messages/).
-# If a specific post is not translated to a language, then the version
-# in the default language will be shown instead.
-
 # What is the default language?
 DEFAULT_LANG = "en"
 
@@ -266,7 +212,7 @@ COMPILERS = {
 
 # Create by default posts in one file format?
 # Set to False for two-file posts, with separate metadata.
-# ONE_FILE_POSTS = True
+ONE_FILE_POSTS = True
 
 # If this is set to True, the DEFAULT_LANG version will be displayed for
 # untranslated posts.
@@ -736,37 +682,6 @@ IMAGE_THUMBNAIL_SIZE = 400
 # page URL.
 # INDEXES_PRETTY_PAGE_URL = False
 
-# Color scheme to be used for code blocks. If your theme provides
-# "assets/css/code.css" this is ignored.
-# Can be any of:
-# algol
-# algol_nu
-# arduino
-# autumn
-# borland
-# bw
-# colorful
-# default
-# emacs
-# friendly
-# fruity
-# igor
-# lovelace
-# manni
-# monokai
-# murphy
-# native
-# paraiso_dark
-# paraiso_light
-# pastie
-# perldoc
-# rrt
-# tango
-# trac
-# vim
-# vs
-# xcode
-# This list MAY be incomplete since pygments adds styles every now and then.
 CODE_COLOR_SCHEME = 'solarizeddark'
 
 # If you use 'site-reveal' theme you can select several subthemes
