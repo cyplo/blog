@@ -1011,11 +1011,13 @@ MARKDOWN_EXTENSIONS = ['fenced_code', 'codehilite', 'extra']
 # Extra things you want in the pages HEAD tag. This will be added right
 # before </head>
 # (translatable)
-EXTRA_HEAD_DATA = "<link href=\"https://fonts.googleapis.com/css?family=Titillium+Web:300,400&subset=latin-ext\" rel=\"stylesheet\">"
+# EXTRA_HEAD_DATA = ""
 # Google Analytics or whatever else you use. Added to the bottom of <body>
 # in the default template (base.tmpl).
 # (translatable)
+
 BODY_END = """
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400&subset=latin-ext" rel="stylesheet">
 <!-- Piwik -->
 <noscript><p><img src="https://piwik.cyplo.net/piwik.php?idsite=1&rec=1" style="border:0" alt="" /></p></noscript>
 <script type="text/javascript">
