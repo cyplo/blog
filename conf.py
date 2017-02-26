@@ -1102,13 +1102,14 @@ EXTRA_HEAD_DATA = "<link href=\"https://fonts.googleapis.com/css?family=Titilliu
 # (translatable)
 BODY_END = """
 <!-- Piwik -->
+<noscript><p><img src="https://piwik.cyplo.net/piwik.php?idsite=1&rec=1" style="border:0" alt="" /></p></noscript>
 <script type="text/javascript">
   var _paq = _paq || [];
   // tracker methods like "setCustomDimension" should be called before "trackPageView"
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
   (function() {
-    var u="//piwik.cyplo.net/";
+    var u="https://piwik.cyplo.net/";
     _paq.push(['setTrackerUrl', u+'piwik.php']);
     _paq.push(['setSiteId', '1']);
     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
