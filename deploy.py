@@ -5,7 +5,7 @@ import os
 import requests
 import sys
 import hashlib
-
+import time
 
 def checkArguments():
     if len(sys.argv) != 3 and len(sys.argv) != 4:
@@ -64,7 +64,7 @@ def calculateHashesForPaths(paths):
     print('OK')
     return hashes
 
-def createDeployment():
+def createDeployment(file_hashes):
     print('Creating new deployment...', end="")
     new_deploy = {'files': file_hashes, 'context': 'deploy-preview', 'draft': True}
     new_deploy_json = json.dumps(new_deploy)
@@ -73,11 +73,10 @@ def createDeployment():
         print('Failed with error')
         print(response.content)
         sys.exit(4)
+    print('OK')
     return response.json()
 
-def getExistingDeployment():
-    print('Getting deployment information...', end="")
-    deployment_id = sys.argv[3]
+def getExistingDeployment(deployment_id):
     deploy_url = deploys_url + deployment_id + "/"
     response = requests.get(url=deploy_url, headers=json_headers)
     if not response.ok:
@@ -88,6 +87,20 @@ def getExistingDeployment():
 
 def invertDict(dict):
     return {v: k for k, v in dict.items()}
+
+def uploadFilesForHashes(files_for_hashes, required_hashes):
+    for required_hash in required_hashes:
+        current_file_name = files_for_hashes[required_hash]
+        print('Uploading ' + current_file_name + "...", end="")
+        with open(os.path.join(directory_to_deploy, "./" + current_file_name), 'rb') as current_file_handle:
+            file_upload_url = new_deploy_url + "files/" + current_file_name
+            response = requests.put(url=file_upload_url, headers=file_upload_headers, data=current_file_handle)
+            if not response.ok:
+                print('Failed with error')
+                print(response.content)
+                sys.exit(6)
+            else:
+                print('OK')
 
 checkArguments()
 auth_token = getAuthToken()
@@ -106,30 +119,22 @@ paths_to_hash = getAllFilePathsForDirectory(directory_to_deploy)
 file_hashes = calculateHashesForPaths(paths_to_hash)
 
 if not len(sys.argv) == 4:
-    deployment = createDeployment()
-
+    deployment = createDeployment(file_hashes)
 else:
-    deployment = getExistingDeployment()
+    deployment_id = sys.argv[3]
+    deployment = getExistingDeployment(deployment_id)
 
 deployment_id = deployment['id']
-print(deployment_id)
 
 files_for_hashes = invertDict(file_hashes)
 
 new_deploy_url = base_url + "deploys/" + deployment_id + "/"
 file_upload_headers = {"Authorization": "Bearer " + auth_token, 'content-type': "application/octet-stream"}
-
-for required_hash in deployment['required']:
-    current_file_name = files_for_hashes[required_hash]
-    print('Uploading ' + current_file_name + "...", end="")
-    with open(os.path.join(directory_to_deploy, "./" + current_file_name), 'rb') as current_file_handle:
-        file_upload_url = new_deploy_url + "files/" + current_file_name
-        response = requests.put(url=file_upload_url, headers=file_upload_headers, data=current_file_handle)
-        if not response.ok:
-            print('Failed with error')
-            print(response.content)
-            sys.exit(6)
-        else:
-            print('OK')
+uploadFilesForHashes(files_for_hashes, deployment['required'])
 
 print('Done uploading, waiting for the confirmation...')
+while deployment['state'] != 'ready':
+    time.sleep(1)
+    deployment = getExistingDeployment(deployment_id)
+
+print('Fully deployed at' + deployment['deploy_ssl_url'])
