@@ -3,7 +3,10 @@ sudo: true
 dist: trusty
 
 python: 3.5
-cache: pip
+cache:
+    - pip
+    - directories:
+        - output
 
 install:
     - ./travis/install-requirements
