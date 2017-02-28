@@ -16,8 +16,6 @@ if not auth_token:
     sys.exit(2)
 site_id = sys.argv[1]
 directory_to_deploy = os.path.abspath(sys.argv[2])
-if len(sys.argv) == 4:
-    deployment_id = sys.argv[3]
 
 print("Deploying " + directory_to_deploy + " to Netlify as " + site_id)
 directory_to_hash = directory_to_deploy
@@ -59,7 +57,7 @@ site_url = base_url + "sites/" + site_id + "/"
 deploys_url = site_url + "deploys/"
 response = {}
 
-if not deployment_id:
+if not len(sys.argv) == 4:
     print('Creating new deployment...', end="")
 
     new_deploy = {'files' : file_hashes, 'context': 'deploy-preview', 'draft': True}
@@ -74,6 +72,7 @@ if not deployment_id:
     deployment_id = response.json()['id']
 else:
     print('Getting deployment information...', end="")
+    deployment_id = sys.argv[3]
     deploy_url = deploys_url + deployment_id + "/"
     response = requests.get(url=deploy_url, headers=json_headers)
     if not response.ok:
