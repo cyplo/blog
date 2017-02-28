@@ -16,6 +16,5 @@ install:
 
 script:
     - ./travis/build
-  
-after_success:
-    - ./deploy.py blog.cyplo.net output/
+    - ./deploy.py blog.cyplo.net output/ 
+
