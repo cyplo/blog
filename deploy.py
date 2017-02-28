@@ -91,7 +91,7 @@ file_upload_headers = {"Authorization":"Bearer " + auth_token, 'content-type': "
 for required_hash in required_file_hashes:
     current_file_name = files_for_hashes[required_hash]
     print('Uploading ' + current_file_name + "...", end="")
-    with open(os.path.join(directory_to_deploy, current_file_name), 'rb') as current_file_handle:
+    with open(os.path.join(directory_to_deploy, "./"+current_file_name), 'rb') as current_file_handle:
         file_upload_url = new_deploy_url + "files/" + current_file_name
         response = requests.put(url=file_upload_url, headers=file_upload_headers, data=current_file_handle)
         if not response.ok:
