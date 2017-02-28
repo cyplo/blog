@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e
+sudo apt-get update
+sudo apt-get install -y liblcms2-dev libfreetype6-dev libjpeg-dev libtiff-dev libwebp-dev libxslt1-dev libxml2-dev libyaml-dev libzmq-dev zlib1g-dev closure-compiler jpegoptim optipng yui-compressor
+sudo pip install -r requirements.txt
+
