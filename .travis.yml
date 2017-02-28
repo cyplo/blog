@@ -12,5 +12,5 @@ install:
     - ./travis/install-requirements
 
 script:
-    - nikola build
-    - nikola check -lf
+    - ./travis/build
+
