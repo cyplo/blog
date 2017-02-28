@@ -591,12 +591,12 @@ REDIRECTIONS = [["2013/03/23/assembling-reprappro-mendel-days-7-8/index.html", "
 # Many filters are shipped with Nikola. A list is available in the manual:
 # <https://getnikola.com/handbook.html#post-processing-filters>
 #
-# from nikola import filters
-# FILTERS = {
-#    ".html": [filters.typogrify],
-#    ".js": [filters.closure_compiler],
-#    ".jpg": ["jpegoptim --strip-all -m75 -v %s"],
-# }
+from nikola import filters
+FILTERS = {
+   ".js":  [filters.closure_compiler],
+   ".png": [filters.optipng],
+   ".jpg": [filters.jpegoptim]
+}
 
 # Expert setting! Create a gzipped copy of each generated file. Cheap server-
 # side optimization for very high traffic sites or low memory servers.

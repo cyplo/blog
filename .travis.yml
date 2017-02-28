@@ -1,12 +1,11 @@
 language: python
+python: 3.5
 sudo: true
 dist: trusty
 
-python: 3.5
 cache:
     - directories:
         - venv 
-        - output
 
 install:
     - ./travis/install-requirements
