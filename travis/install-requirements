@@ -9,3 +9,4 @@ virtualenv -p `which python3` venv
 source venv/bin/activate
 pip3 install -U -r requirements.txt
 
+sudo npm install cssnano-cli --global

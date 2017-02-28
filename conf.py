@@ -537,9 +537,15 @@ REDIRECTIONS = [["2013/03/23/assembling-reprappro-mendel-days-7-8/index.html", "
 # Many filters are shipped with Nikola. A list is available in the manual:
 # <https://getnikola.com/handbook.html#post-processing-filters>
 #
+
 from nikola import filters
+from nikola.filters import runinplace
+def cssnano(infile):
+    return runinplace(r'cssnano %1 %2 --safe', infile)
+
 FILTERS = {
    ".js":  [filters.closure_compiler],
+   ".css":  [cssnano],
    ".png": [filters.optipng],
    ".jpg": [filters.jpegoptim]
 }
