@@ -137,4 +137,4 @@ while deployment['state'] != 'ready':
     time.sleep(1)
     deployment = getExistingDeployment(deployment_id)
 
-print('Fully deployed at' + deployment['deploy_ssl_url'])
+print('Fully deployed at ' + deployment['deploy_ssl_url'])
