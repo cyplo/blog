@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 sudo apt-get update
-sudo apt-get install --fix-missing -y liblcms2-dev libfreetype6-dev libjpeg-dev libtiff-dev libwebp-dev libxslt1-dev libxml2-dev libyaml-dev libzmq-dev zlib1g-dev closure-compiler jpegoptim optipng yui-compressor
-sudo pip3 install -r requirements.txt
+sudo apt-get install --fix-missing -y liblcms2-dev libfreetype6-dev libjpeg-dev libtiff-dev libwebp-dev libxslt1-dev libxml2-dev libyaml-dev libzmq-dev zlib1g-dev closure-compiler jpegoptim optipng yui-compressor python3-pip python-dev 
+sudo pip3 install -U setuptools
+sudo pip3 install -U virtualenvwrapper
+sudo pip3 install -U -r requirements.txt
 
