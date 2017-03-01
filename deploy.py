@@ -8,9 +8,9 @@ import hashlib
 import time
 
 def checkArguments():
-    if len(sys.argv) != 3 and len(sys.argv) != 4:
+    if len(sys.argv) != 4 and len(sys.argv) != 5:
         print('usage: ')
-        print(sys.argv[0] + " netlify_site_id directory_to_deploy [deployment_id_to_continue]")
+        print(sys.argv[0] + " branch_name netlify_site_id directory_to_deploy [deployment_id_to_continue]")
         sys.exit(1)
 
 
@@ -23,10 +23,10 @@ def getAuthToken():
     return token
 
 def getDirectoryToDeploy():
-    return os.path.abspath(sys.argv[2])
+    return os.path.abspath(sys.argv[3])
 
 def getSiteId():
-    return sys.argv[1]
+    return sys.argv[2]
 
 def validateDirectoryStructure():
     print('Validating structure...', end="")
@@ -64,9 +64,18 @@ def calculateHashesForPaths(paths):
     print('OK')
     return hashes
 
+
+def getBranchName():
+    return sys.argv[1]
+
+
 def createDeployment(file_hashes):
     print('Creating new deployment...', end="")
-    new_deploy = {'files': file_hashes, 'context': 'deploy-preview', 'draft': True}
+    branch_name = getBranchName()
+    if branch_name == 'master':
+        new_deploy = {'files': file_hashes, 'draft': False}
+    else:
+        new_deploy = {'files': file_hashes, 'context': 'deploy-preview', 'draft': True}
     new_deploy_json = json.dumps(new_deploy)
     response = requests.post(url=deploys_url, headers=json_headers, data=new_deploy_json)
     if not response.ok:
@@ -118,10 +127,10 @@ validateDirectoryStructure()
 paths_to_hash = getAllFilePathsForDirectory(directory_to_deploy)
 file_hashes = calculateHashesForPaths(paths_to_hash)
 
-if not len(sys.argv) == 4:
+if not len(sys.argv) == 5:
     deployment = createDeployment(file_hashes)
 else:
-    deployment_id = sys.argv[3]
+    deployment_id = sys.argv[4]
     deployment = getExistingDeployment(deployment_id)
 
 deployment_id = deployment['id']
