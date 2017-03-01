@@ -16,4 +16,4 @@ install:
 
 script:
     - ./travis/build
-    - ./deploy.py $TRAIS_BRANCH blog.cyplo.net output/
+    - ./deploy.py $TRAVIS_BRANCH blog.cyplo.net output/
