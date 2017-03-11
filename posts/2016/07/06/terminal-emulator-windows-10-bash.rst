@@ -1,3 +1,10 @@
+| **update as of 03/2017**
+| As this article is by far the most popular on my site right now I feel that an update is necessary, as the landscape evolved a bit since the original publish date.
+| `Conemu <https://conemu.github.io/>`__ started to support Bash on Windows properly now and this is what I settled on in the end.
+| The article below is still relevant for *the running X applications on Windows* part though.
+
+----
+
 I've been playing a bit with
 `GNU/kWindows <https://mikegerwitz.com/2016/04/GNU-kWindows>`__ a.k.a.
 Bash on Windows a.k.a Windows Subsystem for Linux (Beta). I was
@@ -24,7 +31,7 @@ would be possible to use it here as well. To my surprise the answer was - yes !
     sudo apt-get install terminator 
     DISPLAY=:0 terminator -u
 
--  c'est volia !
+-  profit !
 
 |Capture| 
 
