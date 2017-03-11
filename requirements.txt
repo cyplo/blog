@@ -1,3 +1,5 @@
+setuptools
+wheel
 markdown
 pygments-style-solarized
 ws4py
