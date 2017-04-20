@@ -5,4 +5,4 @@ pygments-style-solarized
 ws4py
 watchdog
 webassets
-Nikola
+Nikola==7.8.3

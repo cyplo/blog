@@ -8,6 +8,6 @@ sudo pip3 install -U wheel
 
 virtualenv -p `which python3` venv
 source venv/bin/activate
-pip3 install -U -r requirements.txt
+pip3 install -r requirements.txt
 
 sudo npm install cssnano-cli --global
