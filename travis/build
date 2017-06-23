@@ -1,6 +1,7 @@
 #!/bin/bash
 
 source venv/bin/activate
+nvm use node
 nikola build
 nikola check -lf
 
