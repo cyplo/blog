@@ -543,8 +543,11 @@ from nikola.filters import runinplace
 def cssnano(infile):
     return runinplace(r'cssnano %1 %2 --safe', infile)
 
+def closure_compiler(infile):
+    return runinplace('closure-compiler --language_in=ECMASCRIPT5 --warning_level QUIET --js %1 --js_output_file %2', infile)
+
 FILTERS = {
-   ".js":  [filters.closure_compiler],
+   ".js":  [closure_compiler],
    ".css":  [cssnano],
    ".png": [filters.optipng],
    ".jpg": [filters.jpegoptim]
@@ -1022,7 +1025,13 @@ MARKDOWN_EXTENSIONS = ['fenced_code', 'codehilite', 'extra']
 # in the default template (base.tmpl).
 # (translatable)
 
-BODY_END = """<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400&subset=latin-ext" rel="stylesheet">"""
+BODY_END = """
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400&subset=latin-ext" rel="stylesheet">
+<link href="/assets/css/mermaid.forest.css" rel="stylesheet">
+<script src="/assets/js/mermaid.js"></script>
+<script>mermaid.initialize({startOnLoad:true});</script>
+"""
+
 # <!-- Piwik -->
 # <noscript><p><img src="https://piwik.cyplo.net/piwik.php?idsite=1&rec=1" style="border:0" alt="" /></p></noscript>
 # <script type="text/javascript">
