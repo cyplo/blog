@@ -18,5 +18,3 @@ deploy:
   bucket: blog.cyplo.net
   local-dir: output
   acl: public_read
-  on:
-    repo: cyplo/blog
