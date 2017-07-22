@@ -42,11 +42,12 @@ With that disabled I can include mermaid's style and js files like so (also in `
 	<script src="/assets/js/mermaid.js"></script>
 	<script>mermaid.initialize({startOnLoad:true, cloneCssStyles: false});</script>
 	"""
+
 Where do all these files come from though ? In my case, I have a custom theme, based on ``zen`` called ``zen-cyplo``. The assets in the sources are located under ``themes/zen-cyplo/assets/``.
 Oh, and ``cloneCssStyles: false`` is there as the default of ``true`` made the different css styles on my blog clash.
 Finally, to use mermaid in the post do (for reStructured Text):
 
-.. code-block:: html
+.. code-block:: restructuredtext
 
 	.. raw:: html
 	
