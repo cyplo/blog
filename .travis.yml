@@ -4,10 +4,6 @@ python: 3.5
 sudo: true
 dist: trusty
 
-cache:
-    - directories:
-        - venv
-
 env:
     global:
         secure: QqBbkFASV6pq0OocjQI6RrgSzIhQU3q4YIJmtyMGjN1B78I9zVGt15UJ5JRU1fRiEJ0OId3w8NE2eMKCrG94LmMHISvwrWGZKTbNWtfz1kAnTj5zbcy19LEJ5QJ7srnB3zGAsCm9wlzVcUQhFS7iTwbnc0N4E3Qw1cZ2KgFNs8lFRvt/1g4uxKrv47xQYbs8jdC9L0gP9e75efU86m5htvn/GTtZJcmtxcySijIyPIgPX+VhKjXTXbU7b1R1KQa/oiKww/yitTHGlBxseN+UCLRv54UdXtHST0/Xi01jMzNDb9MkNSTC80Wler9QwfdhyoDxbRdaZ3veCloeWlG8lQ4HYOLRH5el7M7oD63mOZ00sTJnxBpk2Tjv0UyATeLPeNjpIouTT6JXQ2nDxsqTbVfiKCAw16AJKiRoXN8jQNKwjBOh3thETlpee4WRPtmvmRBMOfKd9dQWbjmEWSjGc3KOFVEmZL9rgMq/1wf7HSUncZwalILXAPNuSJHmqCTbfwtytpUdAJ8cagGLyb+2cvlgQakF3SgcIF0iyma7ucb9LW9eyFgvwIh+n5b1+ztLUYcFVY9H0Z3ce42VYiZxSLQrfpap/6l5KJUGJ/FN5UE54dQcFsOkVE6tZ+bzl3tdaD2+KcaGpRY4FLUUzobd9uTQ0VJM+c0QOKFhZ/0ATCs=
