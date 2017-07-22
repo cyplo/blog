@@ -135,8 +135,6 @@ PAGES = (
     ("pages/*.html", "", "story.tmpl"),
 )
 
-
-
 # Below this point, everything is optional
 
 # Post's dates are considered in UTC by default, if you want to use
@@ -547,8 +545,8 @@ def closure_compiler(infile):
     return runinplace('closure-compiler --language_in=ECMASCRIPT5 --warning_level QUIET --js %1 --js_output_file %2', infile)
 
 FILTERS = {
-   ".js":  [closure_compiler],
-   ".css":  [cssnano],
+#   ".js":  [closure_compiler],
+#   ".css": [cssnano],
    ".png": [filters.optipng],
    ".jpg": [filters.jpegoptim]
 }
@@ -1020,35 +1018,19 @@ MARKDOWN_EXTENSIONS = ['fenced_code', 'codehilite', 'extra']
 # Extra things you want in the pages HEAD tag. This will be added right
 # before </head>
 # (translatable)
-# EXTRA_HEAD_DATA = ""
+EXTRA_HEAD_DATA = """
+<link rel="stylesheet" type="text/css" href="/assets/css/fontawesome.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/mermaid.forest.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/titillium.css">
+"""
 # Google Analytics or whatever else you use. Added to the bottom of <body>
 # in the default template (base.tmpl).
 # (translatable)
 
 BODY_END = """
-<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400&subset=latin-ext" rel="stylesheet">
-<link href="/assets/css/mermaid.forest.css" rel="stylesheet">
 <script src="/assets/js/mermaid.js"></script>
-<script>mermaid.initialize({startOnLoad:true});</script>
+<script>mermaid.initialize({startOnLoad:true, cloneCssStyles: false});</script>
 """
-
-# <!-- Piwik -->
-# <noscript><p><img src="https://piwik.cyplo.net/piwik.php?idsite=1&rec=1" style="border:0" alt="" /></p></noscript>
-# <script type="text/javascript">
-#   var _paq = _paq || [];
-#   // tracker methods like "setCustomDimension" should be called before "trackPageView"
-#   _paq.push(['trackPageView']);
-#   _paq.push(['enableLinkTracking']);
-#   (function() {
-#     var u="https://piwik.cyplo.net/";
-#     _paq.push(['setTrackerUrl', u+'piwik.php']);
-#     _paq.push(['setSiteId', '1']);
-#     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-#     g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-#   })();
-# </script>
-# <!-- End Piwik Code -->
-# """
 
 # The possibility to extract metadata from the filename by using a
 # regular expression.
@@ -1100,7 +1082,7 @@ UNSLUGIFY_TITLES = True
 # If webassets is installed, bundle JS and CSS into single files to make
 # site loading faster in a HTTP/1.1 environment but is not recommended for
 # HTTP/2.0 when caching is used. Defaults to True.
-# USE_BUNDLES = True
+USE_BUNDLES = False
 
 # Plugins you don't want to use. Be careful :-)
 # DISABLED_PLUGINS = ["render_galleries"]
