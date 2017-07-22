@@ -545,8 +545,8 @@ def closure_compiler(infile):
     return runinplace('closure-compiler --language_in=ECMASCRIPT5 --warning_level QUIET --js %1 --js_output_file %2', infile)
 
 FILTERS = {
-#   ".js":  [closure_compiler],
-#   ".css": [cssnano],
+   ".js":  [closure_compiler],
+   ".css": [cssnano],
    ".png": [filters.optipng],
    ".jpg": [filters.jpegoptim]
 }
@@ -1020,8 +1020,8 @@ MARKDOWN_EXTENSIONS = ['fenced_code', 'codehilite', 'extra']
 # (translatable)
 EXTRA_HEAD_DATA = """
 <link rel="stylesheet" type="text/css" href="/assets/css/fontawesome.css">
-<link rel="stylesheet" type="text/css" href="/assets/css/mermaid.forest.css">
 <link rel="stylesheet" type="text/css" href="/assets/css/titillium.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/mermaid.forest.css">
 """
 # Google Analytics or whatever else you use. Added to the bottom of <body>
 # in the default template (base.tmpl).
