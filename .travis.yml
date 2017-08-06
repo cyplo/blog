@@ -8,10 +8,12 @@ install:
 script:
     - "./travis/build"
 deploy:
-    - s3cmd sync --delete-removed -P -M -H -r output/ s3://blog.cyplo.net
-    - aws configure set preview.cloudfront true
-    - aws cloudfront create-invalidation --distribution-id EIOF397UCI6D --paths "/*"
-  
+    provider: script
+      script: "./travis/deploy.sh"
+        on:
+            - master
+            - s3
+
 env:
   global:
   - secure: GRm8uLPX+tyE9NKV6nfCEgV2HlQyHVrNsYBjI3A1OeOBhmyCc8Mjww9UjcJ+/A7BffMWD7es2etZrjwB0qs98I2cC6AuuSXr80483NWC46luNjcsyHFt0DsvkhzMJ4RvA6p50ILJpON7aFr3R4X2IXIeIcKCQEBmu9398WxwT2xCTsTJimHPT9vAxMhdP5tq5BVVuWjWLJc8zIVlxR2yaXzvzpayxVO85h5HuJ2ef/nqnMbdr6XJxidBp1Qz9/liWxa877yfoFgxysJKkuT1UkfmB37e78uaA7sXPCkrTn4zD/OxExGoGPW4LTOz/Q2rPFtbmTM9tB9WXVkzIBafXECdYyIPfR4PMV+2p8b6vuVznpFZfDI6edDummuAJ8DEpD6XZ9SMi3h9mFBSxf6SO3OyeWlICd49vRxQNqCE1tMSiGjnk54N7nv42M/SsIdN0hHxJzEIz9yYkaorREj7MFbszlTmaRmnH0fWY98B9o+t0sSFRBkc1jZ9E7L+mnr4Z5NE7GZrktHAx9HnTlV5gVSZ+FBf6LmHiYoLAnht7ek/G4rktWTdIjIeZAzfLbNBDDmVENIUImEMxlzF/mm9RiXOq+kdc4DivRryx84D3AJTyUzEkv1HUnmkmXdNIEqt6fv1LszAuRoJ+NgGnKnzlCFvPoqhNrKbg0/G1btwPBc=
