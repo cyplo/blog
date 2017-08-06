@@ -1,10 +1,8 @@
 #!/bin/bash
 set -e
-echo $AWS_ACCESS_KEY_ID|wc -m
-echo $AWS_SECRET_ACCESS_KEY|wc -m
-echo $AWS_DEFAULT_REGION|wc -m
 set -x
 aws --version
-s3cmd sync --delete-removed -P -H -r output/ s3://blog.cyplo.net
+s3cmd --version
+s3cmd sync --access_key="$AWS_ACCESS_KEY_ID" --secret_key="$AWS_SECRET_ACCESS_KEY" --region="$AWS_DEFAULT_REGION" --delete-removed -P -H -r output/ s3://blog.cyplo.net
 aws configure set preview.cloudfront true
 aws cloudfront create-invalidation --distribution-id EIOF397UCI6D --paths "/*"
