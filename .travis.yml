@@ -24,3 +24,8 @@ deploy:
       branch:
           - master
           - s3
+
+after_deploy:
+  - aws configure set preview.cloudfront true
+  - aws cloudfront create-invalidation --distribution-id EIOF397UCI6D --paths "/*"
+
