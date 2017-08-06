@@ -8,11 +8,11 @@ install:
 script:
     - "./travis/build"
 deploy:
-    provider: script
+    - provider: script
       script: ./travis/deploy.sh
-        on:
-            - master
-            - s3
+      on:
+        - master
+        - s3
 
 env:
   global:
