@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 sudo apt-get update
-sudo apt-get install --fix-missing -y liblcms2-dev libfreetype6-dev libjpeg-dev libtiff-dev libwebp-dev libxslt1-dev libxml2-dev libyaml-dev libzmq-dev zlib1g-dev closure-compiler jpegoptim optipng yui-compressor python3-pip python-dev
+sudo apt-get install --fix-missing -y liblcms2-dev libfreetype6-dev libjpeg-dev libtiff-dev libwebp-dev libxslt1-dev libxml2-dev libyaml-dev libzmq-dev zlib1g-dev closure-compiler jpegoptim optipng yui-compressor python3-pip python-dev s3cmd
 sudo pip3 install -U setuptools
 sudo pip3 install -U virtualenvwrapper
 sudo pip3 install -U wheel
@@ -9,6 +9,7 @@ sudo pip3 install -U wheel
 virtualenv -p `which python3` venv
 source venv/bin/activate
 pip3 install -r requirements.txt
+pip3 install awscli
 
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
 export NVM_DIR="$HOME/.nvm"

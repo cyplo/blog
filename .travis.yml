@@ -4,28 +4,15 @@ sudo: true
 dist: trusty
 
 install:
-- "./travis/install-requirements"
-
+    - "./travis/install-requirements"
 script:
-- "./travis/build"
-
+    - "./travis/build"
 deploy:
-  provider: s3
-  access_key_id:
-      secure: "UKCJPsPeC7gfmPPEGFMBZYXs7vbONmC/oGzqKA9e+apL6ME25Xw6ihDbi1+kAKbtZZxe0yPii8AQ2Jg7dprVdUo9568f4PpYvUOiWhprskzx1/hiQEuz19U5U9ez6FkFFdiRL0YJRMuo9PRcRCHaQuDsT2trb58pxNMnCG0rzzlxKgQ58GEnBarE81HZxlmZATXyaqUaEOcCkrR60LzPi4QVJ4cSW7qoPoZKs6kZqGa0us2SxVwcx13BRb4F61OdKb6OtkNXEDiN3/D0WSiJ5yPoXKjDsyNtcTNSuGAp8osk8EhEkLY2tEh7m4WC+ZHIB89Zinv0VqExTpEut/0IgNY8680+j3lHYj0U6zz7SgrcJAv2qOsDcOAY+WZYq2VW0PQxK/vwN1Tkmr0s7sSWNJSkiUC1iSM2Jrs9kcKW7mYzFmCI6wjtGmZ2wNCYfUwHvNT64pf1BSQacSty5C+68RDX5RKZArG6iJzxgKNQAckLdnOF/TZroJwhbTmqEbAsrANtvgAMFl9b+p+14f1BzaRWkxlJdEht0z5wckd/ctYNDLD1x0AKHhQyX6wazyfUsbM7jLDKFBz3Q0EVtiGqD4ps1FsEofb3MTDJMRr3Ysos7mxYuVQ6jLJWk26Xs3FT3DQGbeArF6BNXBPKLTLPljKzRPqaPPmPIHM+ZSYc3Es="
-  secret_access_key:
-    secure: "ADAsxY3KvFmZfC3O28z3teOsgH09TTOp6s43+v/AICPmMucmhNNRxg42qtZO962Np/80sMm49DPSGWXm9z/D81iqI2rXjCiU6jiTdjMqNfyZCa6BwmfNam9rVsZKGxw27IhJx1YEzmFIarfSr/3DQXHJ6BnzdESo9XyExMGrDcJozE3zQ83YdFMhSdyKMDtLfGFr4ObOZXjKikPr5MBW7zJiUe3vdCLejiSHrRvVJX7D179PAFaUDrhfYxjR1ILMZWQkw3GvwWrfiW63oTKfpq90iAIk5qarGw3n4us8tqImuyB0y9T5GZrrAEKdnXIZwZmB5Ld7oxNf7mBaZ3q3awYzWoMzJAPmbv3KOO4TwLzqzqRhXUVSCi1dKWeaGPwpcKrQxoBGnp0HfXvh6R15veAB0hwsOD/ps6ivWNl3TaAbjDkIVt5ysvXzbRJDXffEphOuHhM+hbzTEP7dw7u8rf4DDu4lqrHxXD9NRtzRSn1KsTq9CWkaKFJZBCuvKmHmnCCdfLxmOuJi40JKPLvAXx5Yf+x+5UUPEa8dhZytmAz9hYdVH7DdEnK54WTm7afcn0QPt6+Jcuc1CSuRPSurmKxrUHwbEcOoBcaBQd8kJ6nUAC8Z33pCXZcMk/9YSeSUGAoTD/1QHfIAtzhT1Vd73GRSvwYPF+pjJ4oHVupQZws="
-  bucket: blog.cyplo.net
-  region: "eu-west-1"
-  local-dir: output
-  acl: public_read
-  skip_cleanup: true
-  on:
-      branch:
-          - master
-          - s3
-
-after_deploy:
-  - aws configure set preview.cloudfront true
-  - aws cloudfront create-invalidation --distribution-id EIOF397UCI6D --paths "/*"
-
+    - s3cmd sync --delete-removed output/ s3://blog.cyplo.net
+    - aws configure set preview.cloudfront true
+    - aws cloudfront create-invalidation --distribution-id EIOF397UCI6D --paths "/*"
+  
+env:
+  global:
+  - secure: GRm8uLPX+tyE9NKV6nfCEgV2HlQyHVrNsYBjI3A1OeOBhmyCc8Mjww9UjcJ+/A7BffMWD7es2etZrjwB0qs98I2cC6AuuSXr80483NWC46luNjcsyHFt0DsvkhzMJ4RvA6p50ILJpON7aFr3R4X2IXIeIcKCQEBmu9398WxwT2xCTsTJimHPT9vAxMhdP5tq5BVVuWjWLJc8zIVlxR2yaXzvzpayxVO85h5HuJ2ef/nqnMbdr6XJxidBp1Qz9/liWxa877yfoFgxysJKkuT1UkfmB37e78uaA7sXPCkrTn4zD/OxExGoGPW4LTOz/Q2rPFtbmTM9tB9WXVkzIBafXECdYyIPfR4PMV+2p8b6vuVznpFZfDI6edDummuAJ8DEpD6XZ9SMi3h9mFBSxf6SO3OyeWlICd49vRxQNqCE1tMSiGjnk54N7nv42M/SsIdN0hHxJzEIz9yYkaorREj7MFbszlTmaRmnH0fWY98B9o+t0sSFRBkc1jZ9E7L+mnr4Z5NE7GZrktHAx9HnTlV5gVSZ+FBf6LmHiYoLAnht7ek/G4rktWTdIjIeZAzfLbNBDDmVENIUImEMxlzF/mm9RiXOq+kdc4DivRryx84D3AJTyUzEkv1HUnmkmXdNIEqt6fv1LszAuRoJ+NgGnKnzlCFvPoqhNrKbg0/G1btwPBc=
+  - secure: XcBDSyfxhvskDkrOoN+3OBqzqtXj0TXDfd5v9G+Rnpu8rNH1MtE0EkNT9vJebDXO2dExJ53RWchSt84opZHYcwYCIzuUwdjJaKLl8AaB3+2/gS+ez2LpseU9Gv4geV/xRTXrTAxzGta6a3Uk75B4X2mQ3mn8A+vNWJgLYgyDbIXAg1CxVoTI3VdpuHFujYNUCgwZBW2QywDoWbYLTZWxl5CdhRwgADu1wHJUBhPqaoqJQW36DnphSPDbwNZiMZYQkdLroN3dMoxWZbmm8TXad/dLBzOMVcdPRmIGkpxs07NqJiY9+5K3B8ug5A4Dogl/trRdK0X3w2cNXe/5sED3iaDsa1jKt/FDNpTf0OnJpJCHb2G1bcOApYG6yMbdG2c8YUvKMPH/37K4g1wYP5OAIYeMsEefURCJ+NnL8Tl9LvEAEZ11VMtB3ip0oTHfT1CLBfuyDkqAnRNRuRe2AAKrWip9Sf/Fy5vdtOoVadM0GyP1poQ6EI4cqx71RqN1VdyVardFSFBafYKtZw69yOaR39qgE2ww1Euq1hIMDEPkuF8fQAFYsGzHi5C+mlMhZ+v9OuRT3B+c2r25QVf8QDQKNNE6+TQZIWQ7Eshn4YaoA//smxWaLTy6I330SUrqmZJdzIybGVVIG/wtGfFu/aKNUckOzEooX+wvXkyQn1RqB6E=
