@@ -1,5 +1,6 @@
 #!/bin/bash
+set -e
 
-s3cmd sync --delete-removed -P -M -H -r output/ s3://blog.cyplo.net
+s3cmd sync --delete-removed -P -H -r output/ s3://blog.cyplo.net
 aws configure set preview.cloudfront true
 aws cloudfront create-invalidation --distribution-id EIOF397UCI6D --paths "/*"
