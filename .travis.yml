@@ -9,7 +9,7 @@ script:
     - "./travis/build"
 deploy:
     provider: script
-      script: "./travis/deploy.sh"
+      script: ./travis/deploy.sh
         on:
             - master
             - s3
