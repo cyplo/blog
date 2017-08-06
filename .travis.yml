@@ -9,7 +9,7 @@ script:
     - "./travis/build"
 deploy:
     - provider: script
-      script: ./travis/deploy.sh
+      script: ./travis/deploy
       skip_cleanup: true
       on:
           branch:
