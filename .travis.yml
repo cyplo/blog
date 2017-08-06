@@ -11,8 +11,9 @@ deploy:
     - provider: script
       script: ./travis/deploy.sh
       on:
-        - master
-        - s3
+          branch:
+            - master
+            - s3
 
 env:
   global:
