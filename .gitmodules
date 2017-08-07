@@ -3,4 +3,4 @@
 	url = https://github.com/cyplo/resume.git
 [submodule "travis/s3cmd"]
 	path = travis/s3cmd
-	url = git@github.com:s3tools/s3cmd.git
+	url = https://github.com/s3tools/s3cmd.git 
