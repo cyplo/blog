@@ -14,7 +14,6 @@ deploy:
       on:
           branch:
             - master
-            - s3
 
 env:
   global:
