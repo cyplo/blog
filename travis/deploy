@@ -2,6 +2,7 @@
 set -e
 set -x
 aws --version
+python3 travis/s3cmd/setup.py install
 s3cmd --version
 s3cmd sync --access_key="$AWS_ACCESS_KEY_ID" --secret_key="$AWS_SECRET_ACCESS_KEY" --region="$AWS_DEFAULT_REGION" --delete-removed -P -H -r output/ s3://blog.cyplo.net
 aws configure set preview.cloudfront true
