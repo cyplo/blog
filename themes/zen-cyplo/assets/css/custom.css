@@ -1,3 +1,15 @@
+h1.title {
+  text-align: left !important;
+}
+
+.section {
+  opacity: 1 !important;
+}
+
+pre.code {
+  margin-left: 0 !important;
+}
+
 pre, tt {
   font-family: monospace;
   background-color: #D9D9D9;
