@@ -10,7 +10,7 @@ ${arusahni.html_headstart()}
 ${template_hooks['extra_head']()}
 </head>
 <body>
-    <section class="social">
+    <div class="social">
         <ul>
         %if logo_url:
             <li>
@@ -21,13 +21,13 @@ ${template_hooks['extra_head']()}
         %endif
         ${arusahni.html_navigation_links()}
         </ul>
-    </section>
-    <section class="page-content">
+    </div>
+    <div class="page-content">
         <div class="content" rel="main">
             <%block name="content"></%block>
              ${footer.html_footer()}
         </div>
-    </section>
+    </div>
     ${body_end}
     ${template_hooks['body_end']()}
     ${arusahni.late_load_js()}
