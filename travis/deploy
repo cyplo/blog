@@ -1,9 +1,26 @@
 #!/bin/bash
 set -e
 set -x
+
+SOURCE="output/"
+AWS_DEFAULT_REGION="eu-central-1"
+AWS_CLOUDFRONT_ID="EIOF397UCI6DL"
+AWS_BUCKET="blog.cyplo.net"
+TO_UPLOAD=`realpath "$SOURCE"`
+
 aws --version
 s3cmd --version
-s3cmd sync --access_key="$AWS_ACCESS_KEY_ID" --secret_key="$AWS_SECRET_ACCESS_KEY" --region="$AWS_DEFAULT_REGION" --reduced-redundancy --delete-removed --acl-public --human-readable-sizes --recursive output/ s3://blog.cyplo.net
+
+echo
+echo "uploading $TO_UPLOAD"
+aws s3 sync --acl public-read \
+    --storage-class REDUCED_REDUNDANCY \
+    --delete \
+    --exclude '.git/*' \
+    --exclude '.gitignore' \
+    --exclude '.idea/*' \
+    "$TO_UPLOAD/" s3://$AWS_BUCKET
+
 aws configure set preview.cloudfront true
 aws configure set region "$AWS_DEFAULT_REGION"
-aws cloudfront create-invalidation --distribution-id EIOF397UCI6DL --paths "/*"
+aws cloudfront create-invalidation --distribution-id $AWS_CLOUDFRONT_ID --paths "/*"
