@@ -10,5 +10,5 @@ replacing the cable and before pots rejuvenation.
 
 `See the gallery`_
 
-.. _See the gallery: /galleries/PioneerSE50/
+.. _See the gallery: /galleries/PioneerSE50/index.html
 
