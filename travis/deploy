@@ -6,20 +6,19 @@ SOURCE="output/"
 AWS_DEFAULT_REGION="eu-central-1"
 AWS_CLOUDFRONT_ID="EIOF397UCI6DL"
 AWS_BUCKET="blog.cyplo.net"
-TO_UPLOAD=`realpath "$SOURCE"`
 
 aws --version
 s3cmd --version
 
 echo
-echo "uploading $TO_UPLOAD"
+echo "uploading $SOURCE"
 aws s3 sync --acl public-read \
     --storage-class REDUCED_REDUNDANCY \
     --delete \
     --exclude '.git/*' \
     --exclude '.gitignore' \
     --exclude '.idea/*' \
-    "$TO_UPLOAD/" s3://$AWS_BUCKET
+    "$SOURCE" s3://$AWS_BUCKET
 
 aws configure set preview.cloudfront true
 aws configure set region "$AWS_DEFAULT_REGION"
