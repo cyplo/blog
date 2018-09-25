@@ -48,3 +48,10 @@ Use e.g. the `atomic` types family or `RefCell` itself to get an immutable handl
 Useful when you don't want your production code to accept anything that can mutate but you still want to control that value from the test.  
 
 See injecting the system clock example in [my previous blog post](https://blog.cyplo.net/posts/2018/07/rust-injection.html).
+
+# Let's talk !
+
+Have any questions ? Would like to pair on Rust ? Curious about TDD ? Ping me !
+Email is good - [hello@cyplo.net](mailto:hello@cyplo.net) or try [Twitter](https://twitter.com/cyplo).  
+
+thanks !
