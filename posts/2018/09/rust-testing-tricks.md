@@ -14,7 +14,7 @@ Experiment with different module names, pay attention to how the test runner dis
 A structure that I like, an example:
 
 `worker.rs:`
-```
+```rust
 // some production code here
 
 mod should {
