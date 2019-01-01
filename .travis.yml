@@ -6,6 +6,12 @@ install:
 - "./travis/install-requirements"
 script:
 - "./travis/build"
+
+ cache:
+    directories:
+     - output
+    timeout: 1000
+
 deploy:
   provider: pages
   skip-cleanup: true
