@@ -20,6 +20,9 @@ deploy:
   target-branch: master
   verbose: true
   local-dir: output
+  keep-history: true
+  fqdn: blog.cyplo.net
+
   on:
     branch: master
 env:
