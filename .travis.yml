@@ -7,10 +7,10 @@ install:
 script:
 - "./travis/build"
 
- cache:
-    directories:
-     - output
-    timeout: 1000
+cache:
+  directories:
+    - output
+  timeout: 1000
 
 deploy:
   provider: pages
