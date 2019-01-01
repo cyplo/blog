@@ -10,7 +10,6 @@ script:
 cache:
   directories:
     - output
-  timeout: 1000
 
 deploy:
   provider: pages
