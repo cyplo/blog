@@ -23,4 +23,5 @@ PoC \|\| GTFO
 | SHA256 (`pocorgtfo16.pdf <pocorgtfo/pocorgtfo16.pdf>`_) = 10f0cb977f03824737a413079ded14b237b7ee155a5397e804586ab7151ed0a3
 | SHA256 (`pocorgtfo17.pdf <pocorgtfo/pocorgtfo17.pdf>`_) = 40b8985521e671b59c305d2f5512f31b95f1e8c59b9c05ad2ca6413a99d59c97
 | SHA256 (`pocorgtfo18.pdf <pocorgtfo/pocorgtfo18.pdf>`_) = cd1e5a8f9fdda3a950556ad77db706ab8a01c97662e79c46d417e0e7858aa742 (or f427637767d7aea764e0f2045ea4de86bbf5410a43535e70285add347047b283)
+| SHA256 (`pocorgtfo19.pdf <pocorgtfo/pocorgtfo19.pdf>`_) = 891b6c4e0cc8f88af2b8c2467c1558b806d2f21be4c7518e7833c27885713464
 
