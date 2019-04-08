@@ -1,16 +1,25 @@
 baseurl = "https://blog.cyplo.net"
-title = "Cyryl Płotnicki"
+title = "Adventurous Computing"
 
 languageCode = "en-us"
 theme = "m10c"
 
-author = "Cyryl Płotnicki"
-description = "Adventurous Computing"
-copyright = "© Copyright 2010-2019 Cyryl Płotnicki"
-
 [params]
-  email = "blog@cyplo.net"
-  github = "cyplo"
-  twitter = "cyplo"
-  linkedin = "cyplo"
-  logo = "/images/avatar.png"
+    email = "blog@cyplo.net"
+    author = "Cyryl Płotnicki"
+    description = """
+    I like to write about technology, people and what happens when they intermix.
+    """
+
+[[params.social]]
+    name = "heart"
+    url = "https://liberapay.com/cyplo/"
+[[params.social]]
+    name = "mail"
+    url = "mailto:blog@cyplo.net"
+[[params.social]]
+    name = "github"
+    url = "https://github.com/cyplo"
+[[params.social]]
+    name = "twitter"
+    url = "https://twitter.com/cyplo"
