@@ -1,6 +1,3 @@
-[submodule "themes/light-hugo"]
-	path = themes/light-hugo
-	url = https://github.com/tblyler/light-hugo
 [submodule "themes/m10c"]
 	path = themes/m10c
 	url = https://github.com/vaga/hugo-theme-m10c.git
