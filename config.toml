@@ -2,12 +2,13 @@ baseurl = "https://blog.cyplo.net"
 title = "Cyryl Płotnicki"
 
 languageCode = "en-us"
-theme = "light-hugo"
+theme = "m10c"
 
 author = "Cyryl Płotnicki"
+description = "Adventurous Computing"
 copyright = "© Copyright 2010-2019 Cyryl Płotnicki"
 
-[Params]
+[params]
   email = "blog@cyplo.net"
   github = "cyplo"
   twitter = "cyplo"

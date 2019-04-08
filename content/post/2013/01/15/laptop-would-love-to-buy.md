@@ -1,3 +1,9 @@
+---
+title: Laptop I'd love to buy
+date: 2013-01-15 17:12:50
+category: hardware
+---
+
 -  support for 16GB of RAM
 -  contact smartcard reader
 -  ~2kg weight
