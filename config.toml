@@ -1,0 +1,15 @@
+baseurl = "https://blog.cyplo.net"
+title = "Cyryl Płotnicki"
+
+languageCode = "en-us"
+theme = "light-hugo"
+
+author = "Cyryl Płotnicki"
+copyright = "© Copyright 2010-2019 Cyryl Płotnicki"
+
+[Params]
+  email = "blog@cyplo.net"
+  github = "cyplo"
+  twitter = "cyplo"
+  linkedin = "cyplo"
+  logo = "/images/avatar.png"
