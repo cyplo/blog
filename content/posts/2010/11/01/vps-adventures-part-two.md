@@ -3,7 +3,6 @@ title: VPS Adventures part two
 date: 2010-11-01 14:23:18
 tags: [server, tilaa, ubuntu, virtualization, vps]
 category: server
-categories: server
 ---
 
 After some not so pleasurable experiences with the previous VPS hosting
