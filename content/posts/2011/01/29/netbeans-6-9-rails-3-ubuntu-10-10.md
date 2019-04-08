@@ -19,7 +19,7 @@ sudo apt-get install netbeans
 
 Now go ahead and try running some Rails app.
 
-```
+```bash
 /var/lib/gems/1.9.1/gems/activesupport-3.0.3/lib/active_support/dependencies.rb:239:in `require': /var/lib/gems/1.9.1/gems/activesupport-3.0.3/lib/active_support/cache/mem_cache_store.rb:32: invalid multibyte escape: /[x00-x20%x7F-xFF]/ (SyntaxError)
 ```
 

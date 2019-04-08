@@ -1,9 +1,9 @@
 baseurl = "https://blog.cyplo.net"
 
-languageCode = "en-us"
+languageCode = "en-gb"
 
 theme = "terminal"
-paginate = 5
+paginate = 7
 
 [params]
   # dir name of your blog content (default is `content/posts`)
@@ -21,8 +21,8 @@ paginate = 5
 
 [languages]
   [languages.en]
-    title = "Adventurous Computingi by Cyryl Płotnicki"
-    subtitle = " I like to write about technology, people and what happens when they intermix. "
+    title = "Adventurous Computing by Cyryl Płotnicki"
+    subtitle = "I like to write about technology, people and what happens when they intermix."
     keywords = "programming, testing, tdd, rust, golang"
     copyright = "2010-2019 Cyryl Płotnicki"
     menuMore = "Show more"

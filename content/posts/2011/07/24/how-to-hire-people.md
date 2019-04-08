@@ -1,3 +1,10 @@
+---
+title: How to hire a programmer, a.k.a. tech recruitment explained
+date: 2011-07-24 20:31:55
+tags: [recruitment]
+category: hopefully influential
+---
+
 Today’s post is not a recipe at all. Maybe a little. More of viewpoint
 than a recipe. Here’s what I think the tech recruitment should look
 like. It won’t be cheap. And yes, I have conducted a lot of interviews
@@ -44,6 +51,5 @@ simple max function. Take the first one and the second one,. Decide
 which one seems better suited for you. Then take the next one and
 compare her to the current max. And please hire people only when you’re
 ready to hire them. UPDATE. After writing this post I've stumbled on
-this `37signal's
-art <http://37signals.com/svn/posts/2628-how-to-hire-a-programmer-when-youre-not-a-programmer>`__
+this [37signal's article](http://37signals.com/svn/posts/2628-how-to-hire-a-programmer-when-youre-not-a-programmer)
 . Worth reading.
