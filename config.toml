@@ -5,8 +5,8 @@ languageCode = "en-gb"
 theme = "beautifulhugo"
 paginate = 16
 
-[params]
-    useHLJS = true
+pygmentsUseClasses=true
+pygmentsCodeFences=true
 
 [[params.bigimg]]
     src = "img/header.jpg"
