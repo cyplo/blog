@@ -1,3 +1,9 @@
+---
+title: Poor man's secrets storage
+date: 2014-09-26 10:33:31
+tags: [security]
+---
+
 I'm a bit cautious when it comes to storing my passwords and other
 secrets. I do not use any web or desktop applications to do this for me.
 How do I remember those passphrases then ? I have a central file server,
@@ -6,13 +12,12 @@ tar archive of a directory with various files containing secrets.
 Syncing these files across computers became a bit cumbersome lately. I'm
 using git to version them, but because I do not want to have the sync
 server to contain unencrypted secrets I needed to bake some custom
-solution. `Bash <https://access.redhat.com/articles/1200223>`__ to the
+solution. [Bash](https://access.redhat.com/articles/1200223) to the
 rescue ! There are still some assumptions made here about permissions,
 directories layout and some stuff not failing, but I'm sure you'll be
-able to figure this out and tweak to your needs. 
+able to figure this out and tweak to your needs.
 
-.. code-block:: bash
-
+```
     #!/bin/bash
 
     TUNNEL_CREDS="user@tunnelhost"
@@ -82,3 +87,4 @@ able to figure this out and tweak to your needs.
     ssh -S "$SOCKET" -O exit $TUNNEL_CREDS
 
     popd
+```
