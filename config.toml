@@ -11,7 +11,7 @@ paginate = 7
   # ["orange", "blue", "red", "green", "pink"]
   themeColor = "orange"
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
+  showMenuItems = 5
   # set theme to full screen width
   fullWidthTheme = false
   # center theme with default width
@@ -35,16 +35,20 @@ paginate = 7
 
     [languages.en.menu]
       [[languages.en.menu.main]]
+        identifier = "donate"
+        name = " donate"
+        url = "https://liberapay.com/cyplo/"
+
+      [[languages.en.menu.main]]
         identifier = "about"
-        name = "About"
+        name = "about"
         url = "/pages/about"
 
-[[params.social]]
-    name = "heart"
-    url = "https://liberapay.com/cyplo/"
-[[params.social]]
-    name = "mail"
-    url = "mailto:blog@cyplo.net"
+      [[languages.en.menu.main]]
+        identifier = "projects"
+        name = "projects"
+        url = "/pages/projects"
+
 [[params.social]]
     name = "github"
     url = "https://github.com/cyplo"
