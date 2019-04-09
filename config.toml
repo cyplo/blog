@@ -8,38 +8,49 @@ paginate = 16
 pygmentsUseClasses=true
 pygmentsCodeFences=true
 
+title = "Adventurous Computing"
+
 [[params.bigimg]]
     src = "img/header.jpg"
     position = "center top"
 
-[languages]
-  [languages.en]
-    title = "Adventurous Computing by Cyryl Płotnicki"
+[params]
+    homeTitle = "Adventurous Computing by Cyryl Płotnicki"
     keywords = "programming, testing, tdd, rust, golang"
     logo = "img/avatar.jpg"
+    showRelatedPosts = true
+    rss = true
 
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        identifier = "donate"
-        name = " donate"
-        url = "https://liberapay.com/cyplo/"
+[[menu.main]]
+identifier = "donate"
+name = " donate"
+url = "https://liberapay.com/cyplo/"
 
-      [[languages.en.menu.main]]
-        identifier = "blog"
-        name = "blog"
-        url = "/posts"
+[[menu.main]]
+identifier = "blog"
+name = "blog"
+url = "/posts"
 
-      [[languages.en.menu.main]]
-        identifier = "about"
-        name = "about"
-        url = "/pages/about"
+[[menu.main]]
+identifier = "about"
+name = "about"
+url = "/pages/about"
 
-      [[languages.en.menu.main]]
-        identifier = "files"
-        name = "files"
-        url = "/pages/files"
+[[menu.main]]
+identifier = "files"
+name = "files"
+url = "/pages/files"
 
-      [[languages.en.menu.main]]
-        identifier = "projects"
-        name = "projects"
-        url = "/pages/projects"
+[[menu.main]]
+identifier = "projects"
+name = "projects"
+url = "/pages/projects"
+
+[Author]
+  name = "Cyryl Płotnicki"
+  website = "blog.cyplo.dev"
+  email = "blog@cyplo.dev"
+  github = "cyplo"
+  gitlab = "cyplo"
+  twitter = "cyplo"
+  linkedin = "cyplo"
