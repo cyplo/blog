@@ -9,8 +9,9 @@ Hey, remember my [search for the new laptop](/posts/2013/01/15/laptop-would-love
 It's finally over ! I found that Clevo, Taiwanese custom laptop
 manufacturer, has recently added 13'3 FullHD laptop base to their
 offerings - W230ST. And to my surprise - there is a [Polish importer](http://www.bluemobility.pl/) which allows pretty neat specs
-calibration for you. Game on you say ? Indeed. **What do I like about
-it:**
+calibration for you. Game on you say ? Indeed.
+
+## What I like about it:
 
 - Haswell-based, so all the new tech is here, same as in the newest
   MacBooks
@@ -41,7 +42,7 @@ it:**
 Everything seems to be working by default on
 most of the distros. I've tested Gentoo, Arch, Fedora and Crunchbang.
 The only thing that needed some tweaking was that by default I was
-unable to control backlight brightness at all. adding `acpi_backlight=vendor` to the kernel boot parameters, as suggested
+unable to control backlight brightness at all. Adding `acpi_backlight=vendor` to the kernel boot parameters, as suggested
 on [Arch wiki](https://wiki.archlinux.org/index.php/Intel_Graphics#Backlight_not_fully_adjusting.2C_or_adjusting_at_all_after_resume.),
 solved the problem. I haven't delved deeply into Optimus yet, so I don't
 know whether the graphics cards switching works correctly or not. The
