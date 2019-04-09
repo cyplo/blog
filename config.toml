@@ -45,6 +45,11 @@ paginate = 7
         url = "/pages/about"
 
       [[languages.en.menu.main]]
+        identifier = "files"
+        name = "files"
+        url = "/pages/files"
+
+      [[languages.en.menu.main]]
         identifier = "projects"
         name = "projects"
         url = "/pages/projects"
