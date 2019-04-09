@@ -50,7 +50,10 @@ fn main() {
 fn write_test(test_file: &mut File, directory: &DirEntry) {
     let directory = directory.path().canonicalize().unwrap();
     let path = directory.display();
-    let test_name = format!("prefix_if_needed_{}", directory.file_name().unwrap().to_string_lossy());
+    let test_name = format!(
+            "prefix_if_needed_{}",
+            directory.file_name().unwrap().to_string_lossy()
+        );
 
     write!(
         test_file,
