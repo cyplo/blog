@@ -1,10 +1,15 @@
-I gave a talk
-`yesterday <http://www.meetup.com/wrocnet/events/138787702/>`__. It was
+---
+title: Debuggers - how do they work ?
+date: 2013-09-18 17:26:26
+tags: [talks]
+---
+
+I gave a talk [yesterday](http://www.meetup.com/wrocnet/events/138787702/). It was
 on
-`debuggers <https://prezi.com/hzvnsznfkgwj/anatomy-of-the-debugger/>`__.
+[debuggers](https://prezi.com/hzvnsznfkgwj/anatomy-of-the-debugger/).
 From VM-level debuggers to JTAG, quite a packed, high level overview. In
 fact I gave it
-`before, <http://www.meetup.com/KGD-NET/events/113593522/>`__ on another
+[before](http://www.meetup.com/KGD-NET/events/113593522/) on another
 occasions. And this time was different, hence this post. The thing I am
 particularly proud of is that I was able to entertain the crowd for the
 first half of an hour despite not having any computer launched and

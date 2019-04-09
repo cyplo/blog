@@ -1,3 +1,8 @@
+---
+title: Idea for a curated links directory
+date: 2013-09-02 18:47:15
+---
+
 I read a lot. Of books and news alike. Oh, and whitepapers too. And some
 recipes maybe. Some of them I find by my RSS reader. Some are given to
 me by colleagues at work, some arrive by mail, sometimes even in
@@ -13,5 +18,4 @@ right now. I need a system for this. I read something, I archive it in
 the system. People sign up or I do sign them up. People receive my
 curated links list in a more or less regular email. But there is also a
 public, searchable web directory for all the previous editions. Is there
-anything like it around ? Open source please. Selfhosted please. If not
-- I'm just gonna write it.
+anything like it around ? Open source please. Selfhosted please. If not - I'm just gonna write it.
