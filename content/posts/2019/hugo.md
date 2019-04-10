@@ -5,7 +5,7 @@ tags: [nikola, hugo, blog]
 draft: true
 ---
 
-- back to netlify, but without custom sync script - mention link to script
+- back to netlify, but without custom sync script - mention link to script - deploys are much faster now
 - new domain
 - new design
 - made sure links work
