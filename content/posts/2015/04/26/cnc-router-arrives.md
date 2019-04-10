@@ -2,6 +2,7 @@
 title: CNC router arrives
 date: 2015-04-26 13:17:05
 tags: [hardware, cnc]
+series: cnc
 ---
 
 After 2 months of waiting - my CNC router arrives. 8 weeks lead time
