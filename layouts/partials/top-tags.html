@@ -2,13 +2,12 @@
     {{ if .Params.tags }}
         {{ if .Params.series }}
             <div class="blog-tags-with-series blog-tags">
-            {{ end }}
-            {{ if not .Params.series }}
-                <div class="blog-tags">
-                {{ end }}
-                {{ range .Params.tags }}
-                    <a href="{{ $.Site.LanguagePrefix | absURL }}/tags/{{ . | urlize }}/">{{ . }}</a>&nbsp;
-    {{ end }}
-            </div>
+        {{ else}}
+            <div class="blog-tags">
         {{ end }}
+        {{ range .Params.tags }}
+                <a href="{{ $.Site.LanguagePrefix | absURL }}/tags/{{ . | urlize }}/">{{ . }}</a>&nbsp;
+        {{ end }}
+            </div>
     {{ end }}
+{{ end }}
