@@ -10,4 +10,7 @@ draft: true
 - new design
 - made sure links work
 - made sure tags are consistent
+- removed thumbnails - generated on the fly now
 - wording - guys -> folks
+- easy to compose custom templates with the theme ones - see how 'series' is done in the repo
+- smaller repo overall - count number of files ?

@@ -16,7 +16,7 @@ fortunately a friendly neighbour gave me their pair of hands. Lifting
 the machine by 2 people is okay, it's still not lightweight, but
 bearable. Putting it on the table was a different affair entirely.
 Careful not to damage anything, especially the motor assemblies - we've
-put it on a improptu wood ramp. Using heavy duty straps, we've lifted it
+put it on a impromptu wood ramp. Using heavy duty straps, we've lifted it
 up little by little. Then some inspection - the quality is really
 superb, especially of the metal frame ! After that I got an old PC with
 Windows XP and parallel port running Mach3 software - I wanted to set it

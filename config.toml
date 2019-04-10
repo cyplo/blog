@@ -10,6 +10,9 @@ pygmentsCodeFences=true
 
 title = "Adventurous Computing"
 
+[taxonomies]
+    series = "series"
+
 [[params.bigimg]]
     src = "img/header.jpg"
     position = "center top"

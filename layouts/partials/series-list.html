@@ -1,0 +1,21 @@
+<section>
+    {{ $series_taxonomy_name := "series" }}
+    {{ range $taxonomy_term, $taxonomy := .Site.Taxonomies }}
+        {{ if eq $taxonomy_term $series_taxonomy_name }}
+        {{ with $.Site.GetPage (printf "/%s" $taxonomy_term) }}
+            {{ range $key, $value := $taxonomy }}
+            {{ if eq $key $.Params.series }}
+                <h4 class="see-also">{{ i18n "seeAlso" }}</h4>
+                <ul>
+                {{ range $value.Pages }}
+                    <li hugo-nav="{{ .RelPermalink}}">
+                        <a href="{{ .Permalink}}">{{ .LinkTitle }}</a>
+                    </li>
+                {{ end }}
+                </ul>
+            {{ end }}
+            {{ end }}
+        {{ end }}
+        {{ end }}
+    {{ end }}
+</section>

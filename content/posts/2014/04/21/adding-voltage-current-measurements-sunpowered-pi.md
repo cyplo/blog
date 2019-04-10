@@ -3,6 +3,7 @@ title: Adding voltage and current measurements to the sunpowered Pi
 date: 2014-04-21 14:39:13
 tags: [hardware, raspberry pi, sunpowered]
 bigimg: [{ src: "voltages.png" }]
+series: sunpowered
 ---
 
 Remember my [sunpowered Pi](/posts/2014/02/16/sunpowered-server-setup/)
