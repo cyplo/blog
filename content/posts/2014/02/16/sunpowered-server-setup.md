@@ -1,7 +1,7 @@
 ---
 title: Sunpowered server setup
 date: 2014-02-16 21:13:46
-tags: [hardware, raspberrypi, sunpowered]
+tags: [hardware, raspberry pi, sunpowered]
 bigimg: [{ src: "/galleries/sunpowered/IMG_0942.jpg" }]
 ---
 

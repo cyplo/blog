@@ -1,7 +1,7 @@
 ---
 title: WiFi on RaspberryPi
 date: 2014-02-24 20:45:32
-tags: [debian, raspberrypi]
+tags: [debian, raspberry pi]
 ---
 
 Easiest way I've found to configure wifi on RaspberryPi, not really

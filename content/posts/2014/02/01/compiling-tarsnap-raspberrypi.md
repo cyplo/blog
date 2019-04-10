@@ -1,7 +1,7 @@
 ---
 title: Compiling tarsnap on RaspberryPi
 date: 2014-02-01 21:59:27
-tags: [raspberrypi, tarsnap]
+tags: [raspberry pi, tarsnap]
 ---
 
 Just a quickie for `tarsnap 1.0.35.` Featuring my new favourite, download software called aria2.
