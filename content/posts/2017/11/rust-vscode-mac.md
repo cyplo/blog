@@ -1,13 +1,8 @@
-.. title: Setting up Rust development environment using VSCode on a Mac
-.. slug: rust-vscode-mac
-.. date: 2017-11-25 13:50:27 UTC
-.. tags: rust, vscode, ide
-.. category: 
-.. link: 
-.. description: A guide to setting up VSCode as the central point of your Rust development experience
-.. type: text
-
-This post is a part of the upcoming series on different ways of setting up your Rust development environment. It's time for VSCode.
+---
+title: Setting up Rust development environment using VSCode on a Mac
+date: 2017-11-25 13:50:27
+tags: [rust, vscode]
+---
 
 ## Completion and highlighting
 
@@ -42,25 +37,26 @@ cargo install clippy rustfmt rustsym
 
 Now finally, for the VSCode itself, press `cmd-p` and `ext install vscode-rust`. I'm using the new `Rust` extension as `Rusty Code` has been discontinued.
 
-If you're lucky - that's it, you should have working completion and highlighting in Rust files. Check this by opening any Rust source code file. 
+If you're lucky - that's it, you should have working completion and highlighting in Rust files. Check this by opening any Rust source code file.
 If you're greeted by this message: `You have chosen RLS mode but neither RLS executable path is specified nor rustup is installed` - then we need to get the extension to get to know your setup a bit:
 
 In VSCode go to `Settings` using `cmd-,` and put the following config elements there:
 
-```
+```json
 {
-    "rust.cargoPath": "/Users/yourusername/.cargo/bin/cargo",
-    "rust.cargoHomePath": "/Users/yourusername/.cargo",
-    "rust.rustfmtPath": "/Users/yourusername/.cargo/bin/rustfmt",
-    "rust.rustsymPath": "/Users/yourusername/.cargo/bin/rustsym",
-    "rust.rustLangSrcPath": "/Users/yourusername/.rustup/toolchains/nightly-x86_64-apple-darwin/lib/rustlib/src/rust/src",
-    "rust.mode": "rls",
-    "rust.rls": {
-        "executable": "/Users/yourusername/.cargo/bin/rls",
-        "useRustfmt": true
-    }
+  "rust.cargoPath": "/Users/yourusername/.cargo/bin/cargo",
+  "rust.cargoHomePath": "/Users/yourusername/.cargo",
+  "rust.rustfmtPath": "/Users/yourusername/.cargo/bin/rustfmt",
+  "rust.rustsymPath": "/Users/yourusername/.cargo/bin/rustsym",
+  "rust.rustLangSrcPath": "/Users/yourusername/.rustup/toolchains/nightly-x86_64-apple-darwin/lib/rustlib/src/rust/src",
+  "rust.mode": "rls",
+  "rust.rls": {
+    "executable": "/Users/yourusername/.cargo/bin/rls",
+    "useRustfmt": true
+  }
 }
 ```
+
 As the paths in the config need to be absolute, remember to adjust to your situation (system username) accordingly.
 
 Now when you reload and start editing a Rust file you should see `RLS: Analysis finished` on the bottom bar and the completion and highlighting should all work. Yay !
@@ -71,30 +67,30 @@ VSCode has a system of tasks that we can leverage to run the build and test from
 If you go to `Tasks->Configure` tasks it will create an empty `tasks.json` file in your repository.
 Change it to the following to allow for `cargo` to be hooked up as your build tool and test runner.
 
-```
+```json
 {
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "label": "build",
-            "type": "shell",
-            "command": "cargo build",
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "problemMatcher": []
-        },
-        {
-            "label": "test",
-            "type": "shell",
-            "command": "cargo test",
-            "group": {
-                "kind": "test",
-                "isDefault": true
-            }
-        }
-    ]
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "cargo build",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "test",
+      "type": "shell",
+      "command": "cargo test",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      }
+    }
+  ]
 }
 ```
 
@@ -106,20 +102,20 @@ For the native debugger to work we need to install another extension to VSCode c
 
 After reloading VSCode you should be able to set breakpoints on the side gutter and run the program using debugger by pressing `F5`. First time doing this will result in the debugger choice window. Choose `LLDB Debugger` as your debugger and you will be greeted with a JSON configuration file in which you need to tell the debugger a few details on your project. It may look like this:
 
-```
+```json
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "lldb",
-            "request": "launch",
-            "name": "Debug",
-            "program": "${workspaceRoot}/target/debug/name_of_your_executable",
-            "args": [],
-            "cwd": "${workspaceRoot}",
-            "preLaunchTask": "build"
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug",
+      "program": "${workspaceRoot}/target/debug/name_of_your_executable",
+      "args": [],
+      "cwd": "${workspaceRoot}",
+      "preLaunchTask": "build"
+    }
+  ]
 }
 ```
 
