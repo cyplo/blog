@@ -1,8 +1,13 @@
-`Let's Encrypt <https://letsencrypt.org/>`__ is soon to be publicly
+---
+title: Sporting Let's Encrypt certificate
+date: 2015-11-17 09:51:25
+tags: [tls, letsencrypt]
+---
+
+[Let's Encrypt](https://letsencrypt.org/) is a soon to be publicly
 available service to provide TLS certificates for free and in automated
 fashion. I'm helping them test their systems by participating in the
-`beta
-program <https://letsencrypt.org/2015/11/12/public-beta-timing.html>`__.
+[beta programme](https://letsencrypt.org/2015/11/12/public-beta-timing.html).
 Because of that this site is now sporting, publicly recognizable
 certificate from Let's Encrypt. Yay ! The work they are doing I believe
 is of much importance. Lack of easy path for getting TLS certificate was
