@@ -1,6 +1,7 @@
 ---
 title: Meetings
 date: 2014-01-21 20:13:05
+tags: [social]
 ---
 
 Meetings come in different shapes and forms. Let's chat about them.
