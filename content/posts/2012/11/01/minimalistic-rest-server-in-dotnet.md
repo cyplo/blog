@@ -1,7 +1,7 @@
 ---
 title: How to build minimalistic REST server in .Net
 date: 2012-11-01 13:22:39
-tags: [.net]
+tags: [dotnet]
 category: programming
 ---
 

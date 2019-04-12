@@ -5,7 +5,7 @@ tags: [observability]
 series: sunpowered
 ---
 
-Some, rather long, time ago I've added a [custom python](https://blog.cyplo.net/2014/04/21/adding-voltage-current-measurements-sunpowered-pi/)
+Some, rather long, time ago I've added a [custom python](/2014/04/21/adding-voltage-current-measurements-sunpowered-pi/)
 data acquisition and graphing to my sunpowered RaspberryPi installation
 on the balcony. Since then I've upgraded it to Raspi2 and ported the
 data thingy to influxdb + grafana. All 3 of those things I am very

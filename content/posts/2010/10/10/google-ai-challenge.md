@@ -1,7 +1,7 @@
 ---
 title: Google AI Challenge
 date: 2010-10-10 20:37:09
-tags: [.net, ai, google, mono]
+tags: [dotnet, ai, google, mono]
 category: artificial intelligence
 ---
 

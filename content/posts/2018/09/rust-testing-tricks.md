@@ -36,7 +36,7 @@ Cargo prints `worker::should::consume_message_from_queue` when running this test
 Use e.g. the `atomic` types family or `RefCell` itself to get an immutable handle to a internally mutable data.
 Useful when you don't want your production code to accept anything that can mutate but you still want to control that value from the test.
 
-See injecting the system clock example in [my previous blog post](https://blog.cyplo.net/posts/2018/07/rust-injection.html).
+See injecting the system clock example in [my previous blog post](/posts/2018/07/rust-injection.html).
 
 # Write the test first
 

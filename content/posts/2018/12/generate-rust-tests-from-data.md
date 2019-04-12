@@ -102,4 +102,4 @@ You can then further improve on that, e.g. add more directory structure, split t
 Happy hacking !
 
 p.s.
-there are more [Rust testing tricks](https://blog.cyplo.net/posts/2018/09/rust-testing-tricks.html) and let me know if you'd like to [pair program with me on anything !](https://blog.cyplo.net/posts/2018/05/pair-with-me-on-rust.html)
+there are more [Rust testing tricks](/series/rust-testing-tricks) and let me know if you'd like to [pair program with me on anything !](/posts/2018/05/pair-with-me-on-rust)
