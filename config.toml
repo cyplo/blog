@@ -1,4 +1,4 @@
-baseurl = "https://blog.cyplo.dev"
+baseurl = "https://blog.cyplo.dev/"
 
 languageCode = "en-gb"
 
@@ -52,7 +52,7 @@ url = "/pages/files"
 
 [Author]
   name = "Cyryl Płotnicki"
-  website = "https://blog.cyplo.dev"
+  website = "https://blog.cyplo.dev/"
   email = "blog@cyplo.dev"
   github = "cyplo"
   gitlab = "cyplo"
