@@ -3,7 +3,7 @@ baseurl = "https://blog.cyplo.dev"
 languageCode = "en-gb"
 
 theme = "beautifulhugo"
-paginate = 16
+paginate = 7
 
 pygmentsUseClasses=true
 pygmentsCodeFences=true
@@ -45,10 +45,10 @@ identifier = "files"
 name = "files"
 url = "/pages/files"
 
-[[menu.main]]
-identifier = "projects"
-name = "projects"
-url = "/pages/projects"
+# [[menu.main]]
+# identifier = "projects"
+# name = "projects"
+# url = "/pages/projects"
 
 [Author]
   name = "Cyryl Płotnicki"
