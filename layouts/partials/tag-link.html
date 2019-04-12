@@ -1,0 +1,4 @@
+{{ $baseUrl := absURL "tags" }}
+{{ $tagName := urlize . }}
+{{ $tagUrl := printf "%s/%s" $baseUrl $tagName }}
+<a href="{{ $tagUrl }}">{{ $tagName }}</a>&nbsp;
