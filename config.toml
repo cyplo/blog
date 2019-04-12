@@ -12,6 +12,7 @@ title = "Adventurous Computing"
 
 [taxonomies]
     series = "series"
+    tags = "tags"
 
 [[params.bigimg]]
     src = "img/header.jpg"

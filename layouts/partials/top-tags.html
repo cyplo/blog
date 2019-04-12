@@ -6,7 +6,7 @@
             <div class="blog-tags">
         {{ end }}
         {{ range .Params.tags }}
-                <a href="{{ $.Site.LanguagePrefix | absURL }}/tags/{{ . | urlize }}/">{{ . }}</a>&nbsp;
+                <a href="/tags/{{ . | urlize }}/">{{ . }}</a>&nbsp;
         {{ end }}
             </div>
     {{ end }}
