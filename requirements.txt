@@ -1,8 +1,0 @@
-setuptools
-wheel
-markdown
-pygments-style-solarized
-ws4py
-watchdog
-webassets
--e git://github.com/getnikola/nikola.git@927a2b42edbdc9033fd84396011eaf0308c1d848#egg=nikola

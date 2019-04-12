@@ -1,0 +1,60 @@
+baseurl = "https://blog.cyplo.dev/"
+
+languageCode = "en-gb"
+
+theme = "beautifulhugo"
+paginate = 7
+
+pygmentsUseClasses=true
+pygmentsCodeFences=true
+
+title = "Adventurous Computing"
+
+[taxonomies]
+    series = "series"
+    tags = "tags"
+
+[[params.bigimg]]
+    src = "images/header.jpg"
+    position = "center top"
+
+[params]
+    homeTitle = "Adventurous Computing by Cyryl Płotnicki"
+    keywords = "programming, testing, tdd, rust, golang"
+    logo = "images/avatar.jpg"
+    showRelatedPosts = true
+    rss = true
+
+[[menu.main]]
+identifier = "donate"
+name = " donate"
+url = "https://liberapay.com/cyplo/"
+
+[[menu.main]]
+identifier = "blog"
+name = "blog"
+url = "/posts"
+
+[[menu.main]]
+identifier = "about"
+name = "about"
+url = "/pages/about"
+
+[[menu.main]]
+identifier = "files"
+name = "files"
+url = "/pages/files"
+
+# [[menu.main]]
+# identifier = "projects"
+# name = "projects"
+# url = "/pages/projects"
+
+[Author]
+  name = "Cyryl Płotnicki"
+  website = "https://blog.cyplo.dev/"
+  email = "blog@cyplo.dev"
+  github = "cyplo"
+  gitlab = "cyplo"
+  twitter = "cyplo"
+  linkedin = "cyplo"

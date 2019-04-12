@@ -1,3 +1,3 @@
-[submodule "resume"]
-	path = resume
-	url = https://github.com/cyplo/resume.git
+[submodule "themes/beautifulhugo"]
+	path = themes/beautifulhugo
+	url = https://github.com/halogenica/beautifulhugo.git

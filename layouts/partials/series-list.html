@@ -1,0 +1,35 @@
+{{ if .Params.series }}
+    <section>
+        <h4 class="see-also">{{ i18n "seeAlso" }}</h4>
+        <ul>
+            {{ $series_taxonomy_name := "series" }}
+            {{ range $taxonomy_term, $taxonomy := .Site.Taxonomies }}
+                {{ if eq $taxonomy_term $series_taxonomy_name }}
+                    {{ with $.Site.GetPage (printf "/%s" $taxonomy_term) }}
+                        {{ range $key, $value := $taxonomy }}
+                            {{ if eq $key $.Params.series }}
+                                {{ range $value.Pages }}
+                                    {{ if ne .UniqueID $.UniqueID }}
+                                        <li hugo-nav="{{ .RelPermalink}}">
+                                            <a href="{{ .Permalink}}">{{ .LinkTitle }}</a>
+                                        </li>
+                                    {{ end }}
+                                {{ end }}
+                            {{ end }}
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+            {{ if $.Site.Params.showRelatedPosts }}
+                {{ $related := $.Site.RegularPages.Related . | first 2 }}
+                {{ with $related }}
+                    {{ range . }}
+                        <li>
+                            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                        </li>
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+        </ul>
+    </section>
+{{ end }}
