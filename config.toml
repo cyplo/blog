@@ -15,13 +15,13 @@ title = "Adventurous Computing"
     tags = "tags"
 
 [[params.bigimg]]
-    src = "img/header.jpg"
+    src = "images/header.jpg"
     position = "center top"
 
 [params]
     homeTitle = "Adventurous Computing by Cyryl Płotnicki"
     keywords = "programming, testing, tdd, rust, golang"
-    logo = "img/avatar.jpg"
+    logo = "images/avatar.jpg"
     showRelatedPosts = true
     rss = true
 

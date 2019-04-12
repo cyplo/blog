@@ -40,7 +40,7 @@ DISPLAY=:0 terminator -u
 
 - profit !
 
-{{< figure src="capture.png" postition="center" >}}
+{{< figure src="/images/terminal-emulator-windows-10/capture.png" postition="center" >}}
 
 The font rendering is not ideal and the borderless mode does
 not work, but hey, it is quite usable nonetheless ! It even has

@@ -11,4 +11,4 @@ and put it where the bowl's focal point is. Or near it, wherever you get
 strongest signal boost. I get up to 2x stronger reception with the
 antenna presented.
 
-{{< figure src="IMG_0230.jpg" position="center" >}}
+{{< figure src="/images/boosting-your-wifi-signal/IMG_0230.jpg" position="center" >}}

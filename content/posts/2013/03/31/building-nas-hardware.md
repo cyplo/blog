@@ -15,7 +15,7 @@ possible.
 
 ## Case
 
-{{< figure src="Node304_nocover-top-view_lores.jpg" postition="center" >}}
+{{< figure src="/images/building-nas-hardware/Node304_nocover-top-view_lores.jpg" postition="center" >}}
 
 The need for moar virtual disk space calls for moar physical disk space.
 To build any reasonable RAID solution you need 4-5 disks at least, plus
@@ -40,7 +40,7 @@ Nice paper, nice clean print and friendly attitude. Attention to details
 
 ## Motherboard
 
-{{< figure src="lkpq2whHjMbzUSAU_500.jpg" postition="center" >}}
+{{< figure src="/images/building-nas-hardware/lkpq2whHjMbzUSAU_500.jpg" postition="center" >}}
 
 What board supports at least 6 SATA disks, has low power consuption and
 fits into miniITX format ? Easily obtainable in central Europe ? And not

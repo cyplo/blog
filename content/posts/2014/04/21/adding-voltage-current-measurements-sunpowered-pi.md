@@ -2,7 +2,12 @@
 title: Adding voltage and current measurements to the sunpowered Pi
 date: 2014-04-21 14:39:13
 tags: [hardware, raspberry pi, sunpowered]
-bigimg: [{ src: "voltages.png" }]
+bigimg:
+  [
+    {
+      src: "/images/adding-voltage-current-measurements-sunpowered-pi/voltages.png",
+    },
+  ]
 series: sunpowered
 ---
 
@@ -42,7 +47,7 @@ came up with, for the greater good:
 
 Finally, sprinkle all of the above with [some python](https://github.com/cyplo/sunpowered) and get the following:
 
-{{< figure src="voltages.png" position="center" >}}
+{{< figure src="/images/adding-voltage-current-measurements-sunpowered-pi/voltages.png" position="center" >}}
 
 Looking at this you can spot 2 things. One - April the 5th
 was supercloudy superrainy and the battery did not get much charge. And
