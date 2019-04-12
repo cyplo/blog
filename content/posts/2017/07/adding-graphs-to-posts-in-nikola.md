@@ -28,16 +28,16 @@ I use `USE_BUNDLES = False` in `conf.py` as for it gives me more control and is 
 With that disabled I can include mermaid's style and js files like so (also in `conf.py`):
 
 ```python
-	EXTRA_HEAD_DATA = """
-	<link rel="stylesheet" type="text/css" href="/assets/css/fontawesome.css">
-	<link rel="stylesheet" type="text/css" href="/assets/css/titillium.css">
-	<link rel="stylesheet" type="text/css" href="/assets/css/mermaid.forest.css">
-	"""
+EXTRA_HEAD_DATA = """
+<link rel="stylesheet" type="text/css" href="/assets/css/fontawesome.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/titillium.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/mermaid.forest.css">
+"""
 
-	BODY_END = """
-	<script src="/assets/js/mermaid.js"></script>
-	<script>mermaid.initialize({startOnLoad:true, cloneCssStyles: false});</script>
-	"""
+BODY_END = """
+<script src="/assets/js/mermaid.js"></script>
+<script>mermaid.initialize({startOnLoad:true, cloneCssStyles: false});</script>
+"""
 ```
 
 Where do all these files come from though ? In my case, I have a custom theme, based on `zen` called `zen-cyplo`. The assets in the sources are located under `themes/zen-cyplo/assets/`. Oh, and `cloneCssStyles: false` is there as the default of `true` made the different css styles on my blog clash.
