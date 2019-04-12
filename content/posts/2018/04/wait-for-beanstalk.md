@@ -1,17 +1,13 @@
-.. title: Waiting for AWS Elastic Beanstalk environment to become ready
-.. slug: wait-for-beanstalk
-.. date: 2018-04-23 00:00:00 UTC
-.. tags: aws, amazon, eb, elastic beanstalk
-.. category: 
-.. link: 
-.. description: How to wait for AWS Elastic Beanstalk to become ready after making a change.
-.. type: text
+---
+title: Waiting for AWS Elastic Beanstalk environment to become ready
+date: 2018-04-23
+tags: [aws]
+---
 
 Elastic Beanstalk on AWS seems to be one of those services that are pretty cool but it's hard to get to know them.
 One of the tasks you may encounter while working with it is that after making some change to its configuration you would like to wait for it to be finished before proceeding further. The change may be setting an environment variable but can also be deploying a new version of the application. I created a small bash script to help with that, can be useful when you try to run this process unattended, e.g. from CI.
 
-
-```
+```bash
 #!/bin/bash
 set -e
 set -o pipefail

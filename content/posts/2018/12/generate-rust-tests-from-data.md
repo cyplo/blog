@@ -1,7 +1,8 @@
 ---
 title: Generate Rust tests from data files
 date: 2018-12-25
-tags: [rust, programming, tdd, testing, build.rs]
+tags: [rust, tdd, testing]
+series: rust-testing-tricks
 ---
 
 Sometimes you just have a bunch of example data laying around and you want to make sure your code works with all of them.
