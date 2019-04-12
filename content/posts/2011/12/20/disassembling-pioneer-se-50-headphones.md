@@ -10,10 +10,10 @@ available on the internet on how to open the can from the back. As you
 can see Pioneer signs on the side of each can are removable. Take them
 off to uncover the screws. Research made possible by
 [kabanosy](http://en.wikipedia.org/wiki/Kabanos) - best multitool
-ever. Some more info on the headphones: [scan of the user manual](se-50-b-user-manual.pdf)
+ever. Some more info on the headphones: [scan of the user manual](/pdf/disassembling-pioneer-se-50/se-50-b-user-manual.pdf)
 Produced between '68 and '72.
 Two speakers per can !
 Photos taken after replacing the cable and before pots rejuvenation.
 Enjoy :)
 
-{{< gallery dir="galleries/disassembling-pioneer-se-50" />}}
+{{< gallery dir="/galleries/disassembling-pioneer-se-50" />}}
