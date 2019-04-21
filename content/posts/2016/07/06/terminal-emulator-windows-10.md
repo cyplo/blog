@@ -2,6 +2,10 @@
 title: The best terminal emulator for Windows 10's Bash or how to run X applications
 date: 2016-07-06 19:21:13
 tags: [windows]
+aliases:
+  - /posts/2016/07/06/terminal-emulator-windows-10-bash.html
+  - /posts/2016/07/06/terminal-emulator-windows-10-bash
+  - /posts/2016/07/06/terminal-emulator-windows-10
 ---
 
 **update as of 03/2017**
