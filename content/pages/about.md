@@ -19,11 +19,15 @@ I like testing, I taught various aspects of TDD in an apprenticeship course.
 
 ## Day jobs
 
-**Software Engineer** at balena, _October 2018 - Now_
-I work remotely on **Rust** crates compiled into NPM packages through the power of **WASM**.
+**Core services team lead** at _Form3, May 2019 - now_
+
+**Software Engineer** at balena, _October 2018 - May 2019_
+
+I worked remotely on **Rust** crates compiled into NPM packages through the power of **WASM**.
 As all of the above is on the bleeding edge - I find, report and fix bugs throughout the ecosystem.
 
 **Software Craftsman** (Consultant) at Codurance, _January 2017 - October 2018_
+
 Helping client teams grow - working within software teams and teaching technical concepts as well as improving the process.
 Running workshops (e.g. Legacy Code Retreat, advanced git, **TDD**).
 Running **Rust** pairing sessions and intro to Rust workshops.
@@ -37,6 +41,7 @@ Projects:
 - Electronic circuit simulation software for a startup.
 
 **Consultant** at Infusion, _June 2012 - November 2016_
+
 Writing code is still where I spend most of my time, and happily so.
 I do that in **Java** and **.Net**, sprinkled with some **C**, **C++**, Python, bash and powershell I gather requirements, talk to the clients, other engineers, figure out solutions together. My particular specialty seems to be taking over legacy code bases and making them shine. I am responsible for a small team of developers.
 
@@ -61,6 +66,10 @@ This was my first experience as a leader. Despite this we've managed to build th
 **Software Developer**, Power Media S.A., _June 2006 - June 2007_
 
 My first "real" job ! Maintenance on the in-house systems written in Java. Slowly I got into client-facing project as well. Java, Webobjects.
+
+## Education
+
+**Wrocław University of Technology** 2005-2007
 
 ## Books
 
