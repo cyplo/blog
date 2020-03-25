@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://blog.cyplo.dev/"
 
 languageCode = "en-gb"
 
@@ -58,3 +58,4 @@ url = "/pages/files"
   gitlab = "cyplo"
   twitter = "cyplo"
   linkedin = "cyplo"
+  mastodon = "todon.nl/@cyplo"
