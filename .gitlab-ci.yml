@@ -4,5 +4,7 @@ variables:
     GIT_SUBMODULE_STRATEGY: recursive
 
 pages:
+  tags:
+    - docker
   script:
     - hugo
