@@ -128,4 +128,4 @@ Please treat it as an escape hatch to be used in specific situations, situations
 
 Happy Rusting !
 
-p.s. if you'd like to chat about Rust - [book some time with me](https://calendly.com/cyplo/pair-programming/) !
+p.s. if you'd like to chat about Rust - [ping me an email](mailto:rust@cyplo.dev) !

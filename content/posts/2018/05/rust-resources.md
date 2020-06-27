@@ -24,4 +24,4 @@ And finally:
 - [contribute back](https://www.rustaceans.org/findwork/starters) !
 - don't forget to join the [user forums](http://users.rust-lang.org/) for the warm welcome.
 
-If you'd like someone to ask questions to or pair program with, [book some time with me](https://calendly.com/cyplo/pair-programming/).
+If you'd like someone to ask questions to or pair program with, [ping me an email](mailto:rust@cyplo.dev).
