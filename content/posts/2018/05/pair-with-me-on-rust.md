@@ -17,6 +17,6 @@ We can work on any of the following:
 - Contribute back to a larger open source project (I am a contributor to e.g. [cargo](https://github.com/rust-lang/cargo/), [rustc](https://github.com/rust-lang/rust/) and [rustup](https://github.com/rust-lang-nursery/rustup.rs/))
 - A project of mine - e.g. [genpass](https://github.com/cyplo/genpass)
 
-[Click here](https://calendly.com/cyplo/pair-programming/) or ping me an [email](mailto:pair@cyplo.net) to schedule a session - can be a remote one or in person somewhere in London.
+Ping me an [email](mailto:rust@cyplo.dev) to schedule a session - can be a remote one or in person somewhere in London.
 
 Thank you !
