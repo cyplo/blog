@@ -45,6 +45,11 @@ identifier = "files"
 name = "files"
 url = "/pages/files"
 
+[[menu.main]]
+identifier = "talks"
+name = "talks"
+url = "https://slides.cyplo.dev/"
+
 # [[menu.main]]
 # identifier = "projects"
 # name = "projects"
