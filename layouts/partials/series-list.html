@@ -9,7 +9,7 @@
                         {{ range $key, $value := $taxonomy }}
                             {{ if eq $key $.Params.series }}
                                 {{ range $value.Pages }}
-                                    {{ if ne .UniqueID $.UniqueID }}
+                                    {{ if ne .File.UniqueID $.File.UniqueID }}
                                         <li hugo-nav="{{ .RelPermalink}}">
                                             <a href="{{ .Permalink}}">{{ .LinkTitle }}</a>
                                         </li>
