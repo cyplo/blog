@@ -10,7 +10,7 @@ As for baking goes, this recipe is quite forgiving and you don't need to watch r
 
 ## Ingredients
 
-This is for a 20cm (8") skillet, which gives you enough bread for you and one other person to enjoy over a weekend. For a 25cm (10") skillet - double the amounts (ratios of volumes are cubic ;). It's best to use a cast iron skillet as it has enough thermal mass to take pouring cold batter into it and still be reasonably hot afterwards. Flour and cornmeal volume measurements are for flour poured into a cup.
+This is for a 20cm (8") skillet, which gives you enough bread for you and one other person to enjoy over a weekend. For a 25cm (10") skillet - double the amounts. It's best to use a cast iron skillet as it has enough thermal mass to take pouring cold batter into it and still be reasonably hot afterwards. Flour and cornmeal volume measurements are for flour poured into a cup.
 
 ```
 1/2 tablespoon vegetable oil
