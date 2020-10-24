@@ -1,18 +1,23 @@
 image: nixos/latest
 sources:
-    - https://git.sr.ht/~cyplo/blog
+  - https://git.sr.ht/~cyplo/blog
 
 secrets:
-    - b7161fff-05f4-4470-b4a1-57bd67dede23
+  - b7161fff-05f4-4470-b4a1-57bd67dede23
+  - 47d167ed-ef43-4515-9923-6954d34a4fab
 
 tasks:
-    - publish: |
-        set +xv
-        cd blog
-        nix-shell -p hugo --run 'hugo --gc --minify'
-    - github_push: |
-        set +xv
-        cd blog
-        GITHUB_TOKEN=`cat ~/.github_token`
-        git remote add github https://cyplo:$GITHUB_TOKEN@github.com/cyplo/blog.git
-        git push github master
+  - publish: |
+      set +xv
+      cd blog
+      NETLIFY_TOKEN=`cat ~/.netlify_token`
+      nix-shell -p hugo --run 'hugo --gc --minify'
+      nix-shell -p zip --run 'zip -9 -r website.zip public'
+      curl -H "Content-Type: application/zip" -H "Authorization: Bearer $NETLIFY_TOKEN" --data-binary "@website.zip" https://api.netlify.com/api/v1/sites/mysite.netlify.app/deploys
+
+  - github_push: |
+      set +xv
+      cd blog
+      GITHUB_TOKEN=`cat ~/.github_token`
+      git remote add github https://cyplo:$GITHUB_TOKEN@github.com/cyplo/blog.git
+      git push github master
