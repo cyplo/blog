@@ -6,9 +6,13 @@ secrets:
     - b7161fff-05f4-4470-b4a1-57bd67dede23
 
 tasks:
+    - publish: |
+        set +xv
+        cd blog
+        nix-shell -p hugo --run 'hugo --gc --minify'
     - github_push: |
         set +xv
-        cd dotfiles
+        cd blog
         GITHUB_TOKEN=`cat ~/.github_token`
         git remote add github https://cyplo:$GITHUB_TOKEN@github.com/cyplo/blog.git
         git push github master
