@@ -11,6 +11,6 @@ pkgs.mkShell {
   shellHook = ''
     virtualenv simpleEnv
     source simpleEnv/bin/activate
-    pip install netlify-deployer
+    python3 -m pip install netlify-deployer
     '';
 }
