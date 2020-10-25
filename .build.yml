@@ -18,4 +18,4 @@ tasks:
       cd blog
       NETLIFY_TOKEN=`cat ~/.netlify_token`
       nix-shell -p hugo --run 'hugo --gc --minify'
-      nix-shell --run 'netlify-deployer `git branch --show-current` 7a0944f0-cfd0-424b-8252-ca44fc950350 public'
+      if [ git branch --contains HEAD | grep -i master ]; then nix-shell --run 'netlify-deployer master 7a0944f0-cfd0-424b-8252-ca44fc950350 public'; fi
