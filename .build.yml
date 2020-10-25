@@ -18,7 +18,4 @@ tasks:
       cd blog
       NETLIFY_TOKEN=`cat ~/.netlify_token`
       nix-shell -p hugo --run 'hugo --gc --minify'
-      nix-shell -p zip --run 'zip -9 -r website.zip public'
-      echo "finished packing"
-      ls -hal
-      curl -H "Content-Type: application/zip" -H "Authorization: Bearer $NETLIFY_TOKEN" --data-binary "@website.zip" https://api.netlify.com/api/v1/sites/7a0944f0-cfd0-424b-8252-ca44fc950350/deploys
+      nix-shell --run 'netlify-deployer `git branch --show-current` 7a0944f0-cfd0-424b-8252-ca44fc950350 public'
