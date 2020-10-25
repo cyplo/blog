@@ -4,7 +4,7 @@ date: 2020-10-10
 tags: [baking]
 ---
 
-I like baking, as it can be something that does not involve computers.
+I like baking, as it can be something that does not involve any computers.
 Please have this recipe for cornbread, based on buttermilk and baked in a skillet.
 As for baking goes, this recipe is quite forgiving and you don't need to watch ratios as closely as with others.
 
