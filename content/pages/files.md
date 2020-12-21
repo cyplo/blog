@@ -26,3 +26,4 @@ I try to mirror some rare gems here, to lower their chance of disappearing from 
 - [pocorgtfo17.pdf](/pdf/pocorgtfo/pocorgtfo17.pdf) 40b8985521e671b59c305d2f5512f31b95f1e8c59b9c05ad2ca6413a99d59c97
 - [pocorgtfo18.pdf](/pdf/pocorgtfo/pocorgtfo18.pdf) cd1e5a8f9fdda3a950556ad77db706ab8a01c97662e79c46d417e0e7858aa742 or f427637767d7aea764e0f2045ea4de86bbf5410a43535e70285add347047b283
 - [pocorgtfo19.pdf](/pdf/pocorgtfo/pocorgtfo19.pdf) 891b6c4e0cc8f88af2b8c2467c1558b806d2f21be4c7518e7833c27885713464
+- [pocorgtfo20.pdf](/pdf/pocorgtfo/pocorgtfo20.pdf) 4aeb48b545a6f0ba5d945c216412724dcea54b8c7d2e39049ef5797bb2fcd25f
