@@ -41,6 +41,11 @@ name = "about"
 url = "/pages/about"
 
 [[menu.main]]
+identifier = "projects"
+name = "projects"
+url = "/pages/projects"
+
+[[menu.main]]
 identifier = "files"
 name = "files"
 url = "/pages/files"
