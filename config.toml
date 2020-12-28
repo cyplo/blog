@@ -55,11 +55,6 @@ identifier = "talks"
 name = "talks"
 url = "https://slides.cyplo.dev/"
 
-# [[menu.main]]
-# identifier = "projects"
-# name = "projects"
-# url = "/pages/projects"
-
 [Author]
   name = "Cyryl Płotnicki"
   website = "https://blog.cyplo.dev/"
