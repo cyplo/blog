@@ -1,7 +1,7 @@
 ---
 title: Fuzzers and how to run them.
 date: 2019-04-17
-tags: [fuzzing, rust]
+tags: [fuzzing, rust, testing]
 ---
 
 I am fascinated by the concept of fuzzing. It fits well with my desire to test weird code paths by using more of computer's time and less that of a programmer.
@@ -36,7 +36,7 @@ When thinking about other types of tests that are driven by randomness and are g
 
 - Fuzzing is good with finding hidden properties of the existing code, it used after the code is written, while property-based tests can also be used in a TDD workflow
 - In property-based tests you typically want to describe behaviour - they serve as good documentation. Fuzzing is not really as good with that. It can automatically collect the examples though, that then can be manually transformed into a property.
-- As you want your program to always hold all properties true you run all property-based tests within your CI/CD pipeline. For this reason they tend to test only things that are relatively fast to check, excution-time wise. Fuzzers are typically ran over nights or weeks - finding those edge cases, providing more properties for you to know and care about.
+- As you want your program to always hold all properties true you run all property-based tests within your CI/CD pipeline. For this reason they tend to test only things that are relatively fast to check, execution-time wise. Fuzzers are typically ran over nights or weeks - finding those edge cases, providing more properties for you to know and care about.
 
 ## Want help with fuzzing your open source project ?
 
