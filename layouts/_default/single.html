@@ -5,7 +5,7 @@
       <article role="main" class="blog-post">
 
         {{ partial "top-tags" . }}
-        {{ partial "series-name" . }}
+        {{ partial "part-of-series" . }}
 
         {{ .Content }}
 
@@ -26,7 +26,7 @@
             </section>
         {{ end }}
 
-        {{ partial "series-list" . }}
+        {{ partial "see-also-series-list" . }}
 
         {{ if not .Params.series }}
         {{ if .Site.Params.showRelatedPosts }}
