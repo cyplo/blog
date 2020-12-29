@@ -1,6 +1,7 @@
 ---
 title: My 2019 setup
 date: 2019-11-16
+series: my-setup
 tags: [tools]
 ---
 
@@ -67,7 +68,7 @@ Here's a small collection of other tools I found help a lot when on the terminal
 - [ripgrep](https://github.com/BurntSushi/ripgrep) - it is just so much faster than grep
 - [fd](https://github.com/sharkdp/fd) - same but for `find`
 - [bat](https://github.com/sharkdp/bat) - a cooler `cat`
-- [genpass](https://github.com/sharkdp/bat) for generating passwords
+- [genpass](https://crates.io/crates/genpass) for generating passwords
 - [z.lua](https://github.com/skywind3000/z.lua) for faster navigation
 
 And that's it !
