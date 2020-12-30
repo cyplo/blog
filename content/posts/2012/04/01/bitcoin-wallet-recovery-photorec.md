@@ -3,6 +3,9 @@ title: Bitcoin wallet recovery using Photorec
 date: 2012-04-01 21:06:01
 tags: [bitcoin, recovery]
 category: linux
+aliases:
+  - /2012/04/01/bitcoin-wallet-recovery-photorec/
+  - /posts/2012/04/01/bitcoin-wallet-recovery-photorec/
 ---
 
 Ever cried over damaged disk holding your bitcoin wallet ? Ever
