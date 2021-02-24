@@ -11,7 +11,7 @@ My name is Cyryl and I hope you're having a great day !
 I am [running](https://blog.cyplo.net/posts/2018/05/pair-with-me-on-rust.html) remote pairing sessions, helping people with Rust.
 My recent focus is [adding fuzzer](https://twitter.com/cyplo/status/1094606119421521922) infrastructure to their projects.
 
-I started a [blog](https://blog.cyplo.net/) post series on testing in [Rust](https://blog.cyplo.net/categories/rust.html) where I share the [tricks](https://blog.cyplo.net/posts/2018/09/rust-testing-tricks.html) I've learned.
+I started a [blog post series](https://blog.cyplo.net/series/rust-testing-tricks/) on testing in [Rust](https://blog.cyplo.net/categories/rust.html) where I share the tricks I've learned.
 
 I was in both leadership and individual contributor roles, I have respect for all sides involved in the process.
 
@@ -19,7 +19,9 @@ I like testing, I taught various aspects of TDD in an apprenticeship course.
 
 ## Day jobs
 
-**Core services team lead** at _Form3, May 2019 - now_
+**Head of Core Engineering** at Form3, _May 2019 - now_
+
+I am responsible for 3 engineering teams, each having its own technical leadership structure. I work closely with product leadership on the vision for the shared services at the organisation and with other team leads and section heads on execution planning. I help with establishing standards across multiple teams while providing architectural and technical support. I review the more sensitive code & documentation contributions. I guide people through their growth as team leaders and individual developers alike.
 
 **Software Engineer** at balena, _October 2018 - May 2019_
 
