@@ -40,7 +40,7 @@ When thinking about other types of tests that are driven by randomness and are g
 
 ## Want help with fuzzing your open source project ?
 
-If you're not sure what fuzzing is, or you want help with adding fuzzer support to your open source project - just tell me ! Either by [email](fuzzing@cyplo.dev) or on [Twitter](https://twitter.com/cyplo). I'm happy to jump on a call, pair program or whatever you fancy ! I know the most about the Rust fuzzing space, but happy to help with other languages as well - this allows me to learn :)
+If you're not sure what fuzzing is, or you want help with adding fuzzer support to your open source project - just tell me ! Either by [email](mailto:fuzzing@cyplo.dev) or on [Twitter](https://twitter.com/cyplo). I'm happy to jump on a call, pair program or whatever you fancy ! I know the most about the Rust fuzzing space, but happy to help with other languages as well - this allows me to learn :)
 
 I also run a fuzzing server where I can test your project overnight and see if we find anything.
 
