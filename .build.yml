@@ -30,4 +30,4 @@ tasks:
       cd blog
       tar -C public -cvz . > ../site.tar.gz
   - sourcehut_upload: |
-      acurl -v -f https://pages.sr.ht/publish/cyplo.srht.site -Fcontent=@site.tar.gz
+      acurl -f https://pages.sr.ht/publish/cyplo.srht.site -Fcontent=@site.tar.gz
