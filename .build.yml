@@ -15,14 +15,13 @@ tasks:
       GITHUB_TOKEN=`cat ~/.github_token`
       git remote add github https://cyplo:$GITHUB_TOKEN@github.com/cyplo/blog.git
       nix-shell --pure --run 'git push github --all --force'
-  - netlify_publish: |
-      set +xv
+  - build: |
       cd blog
       nix-shell --pure --run 'hugo --gc --minify'
+  - netlify_publish: |
+      set +xv
       export NETLIFY_TOKEN=`cat ~/.netlify_token`
       if [ `git branch --contains HEAD | grep -i master` ]; then nix-shell --pure --keep NETLIFY_TOKEN --run 'netlify-deployer master 7a0944f0-cfd0-424b-8252-ca44fc950350 public'; fi
   - package: |
       cd blog/public
       tar -cvz . > ../../site.tar.gz
-  - sourcehut_upload: |
-      acurl -f https://pages.sr.ht/publish/cyplo.srht.site -Fcontent=@site.tar.gz
