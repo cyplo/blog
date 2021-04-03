@@ -27,7 +27,7 @@ tasks:
       export NETLIFY_TOKEN=`cat ~/.netlify_token`
       if [ `git branch --contains HEAD | grep -i master` ]; then nix-shell --pure --keep NETLIFY_TOKEN --run 'netlify-deployer master 7a0944f0-cfd0-424b-8252-ca44fc950350 public'; fi
   - package: |
-      cd blog
-      tar -C public -cvz . > ../site.tar.gz
+      tar -C blog/public -cv . > site.tar
+      gzip --best site.tar
   - sourcehut_upload: |
       acurl -f https://pages.sr.ht/publish/cyplo.srht.site -Fcontent=@site.tar.gz
