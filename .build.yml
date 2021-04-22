@@ -3,7 +3,7 @@ sources:
   - https://git.sr.ht/~cyplo/blog
 
 secrets:
-  - b7161fff-05f4-4470-b4a1-57bd67dede23
+  - 6c23a8c1-7a30-4a7e-b3b7-0171e898a7d3
   - 47d167ed-ef43-4515-9923-6954d34a4fab
 
 oauth: pages.sr.ht/PAGES:RW
