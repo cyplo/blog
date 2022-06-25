@@ -49,3 +49,7 @@ finished:
 ## Contact & contributions
 * Let me know if you'd like to hack on this by contacting me on `legdur@cyplo.dev` or via `cyplo@todon.nl` on Mastodon.
 
+## Sources
+
+`hg clone https://hg.sr.ht/~cyplo/legdur`
+
