@@ -1,0 +1,8 @@
+{{ if $.Params.series }}
+<div class="blog-series">
+        <p>
+                This post is part of the <a href="/series/{{ .Params.series }}">{{ replace .Params.series "-" " " }}</a> series.
+        </p>
+        <br />
+</div>
+{{ end }}
