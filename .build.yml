@@ -25,8 +25,7 @@ tasks:
       set +xv
       cd blog
       export NETLIFY_TOKEN=`cat ~/.netlify_token`
-      git checkout main
-      nix-shell --pure --keep NETLIFY_TOKEN --run 'netlify-deployer main 7a0944f0-cfd0-424b-8252-ca44fc950350 public'
+      nix-shell --pure --keep NETLIFY_TOKEN --run 'netlify-deployer master 7a0944f0-cfd0-424b-8252-ca44fc950350 public'
   - package: |
       tar -C blog/public -cv . > site.tar
       gzip --best site.tar
