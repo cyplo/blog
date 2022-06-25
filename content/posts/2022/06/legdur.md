@@ -48,6 +48,7 @@ finished:
 
 ## Contact & contributions
 * Let me know if you'd like to hack on this by contacting me on `legdur@cyplo.dev` or via `cyplo@todon.nl` on Mastodon.
+* Discuss on [lobsters](https://lobste.rs/s/klljdd/legdur_keep_your_legacy_durable)
 
 ## Sources
 
