@@ -41,13 +41,14 @@
         devShell = pkgs.mkShell {
           nativeBuildInputs = with pkgs;
             with pkgs.python38Packages; [
+              cacert
+              customPython
               git
               hugo
-              cacert
-              requests
+              hut
               pip
+              requests
               virtualenv
-              customPython
             ];
         };
       });
