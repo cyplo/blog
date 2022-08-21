@@ -14,16 +14,16 @@ tasks:
   - fetch_tools: |
       cd blog
       nix-shell --pure --run 'date'
-  - github_push: |
-      set +xv
-      cd blog
-      GITHUB_TOKEN=`cat ~/.github_token`
-      git remote add github https://cyplo:$GITHUB_TOKEN@github.com/cyplo/blog.git
-      nix-shell --pure --run 'git push github --all --force'
   - build: |
       cd blog
       nix-shell --pure --run 'hugo --gc --minify'
   - package: |
       tar -C blog/public -cvz . > site.tar.gz
   - upload: |
-      nix-shell --pure --keep 'site' --run 'hut pages publish -d $site site.tar.gz'
+      nix-shell blog/shell.nix --run 'hut pages publish -d $site site.tar.gz'
+  - github_push: |
+      set +xv
+      cd blog
+      GITHUB_TOKEN=`cat ~/.github_token`
+      git remote add github https://cyplo:$GITHUB_TOKEN@github.com/cyplo/blog.git
+      nix-shell --pure --run 'git push github --all --force'
