@@ -20,7 +20,7 @@ tasks:
   - package: |
       tar -C blog/public -cvz . > site.tar.gz
   - upload: |
-      nix-shell blog/shell.nix --run 'hut pages publish -d $site site.tar.gz'
+      acurl -f https://pages.sr.ht/publish/$site -Fcontent=@site.tar.gz
   - github_push: |
       set +xv
       cd blog
