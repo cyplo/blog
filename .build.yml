@@ -9,6 +9,8 @@ secrets:
 oauth: pages.sr.ht/PAGES:RW
 
 tasks:
+  - hwinfo: |
+      nix-shell -p lshw --run "lshw -short -quiet -sanitize -c memory -c processor"
   - fetch_tools: |
       cd blog
       nix-shell --pure --run 'date'
