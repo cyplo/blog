@@ -27,7 +27,7 @@ tasks:
       tar -C blog/public -cvz . > site.tar.gz
       ls -hal site.tar.gz
   - sourcehut_upload: |
-      nix-shell blog/shell.nix --pure --run 'hut pages publish -d cyplo.srht.site site.tar.gz'
+      acurl -i -f https://pages.sr.ht/publish/cyplo.srht.site -Fcontent=@site.tar.gz
   - netlify_publish: |
       set +xv
       cd blog
