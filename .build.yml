@@ -24,11 +24,10 @@ tasks:
       cd blog
       nix-shell --pure --run 'hugo --gc --minify'
   - package: |
-      tar -C blog/public -cv . > site.tar
-      gzip --best site.tar
+      tar -C blog/public -cvz . > site.tar.gz
       ls -hal site.tar.gz
   - sourcehut_upload: |
-      acurl -i -f https://pages.sr.ht/publish/cyplo.srht.site -Fcontent=@site.tar.gz
+      nix-shell --pure --run 'hut pages publish -d cyplo.srht.site site.tar.gz'
   - netlify_publish: |
       set +xv
       cd blog
