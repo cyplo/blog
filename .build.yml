@@ -6,7 +6,6 @@ oauth: pages.sr.ht/PAGES:RW
 
 secrets:
   - 6c23a8c1-7a30-4a7e-b3b7-0171e898a7d3
-  - 47d167ed-ef43-4515-9923-6954d34a4fab
 
 environment:
   site: blog.cyplo.dev
@@ -25,7 +24,6 @@ tasks:
       cd blog
       nix-shell --pure --run 'hugo --gc --minify'
   - package: |
-      cd blog
-      tar -cvz . > ../site.tar.gz
+      tar -C blog/public -cvz . > site.tar.gz
   - upload: |
-      hut pages publish -d $site site.tar.gz
+      nix-shell --pure --keep 'site' --run 'hut pages publish -d $site site.tar.gz'
