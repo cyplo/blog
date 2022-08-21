@@ -11,19 +11,20 @@ pygmentsCodeFences=true
 title = "Adventurous Computing"
 
 [taxonomies]
-    series = "series"
-    tags = "tags"
+series = "series"
+tags = "tags"
 
 [[params.bigimg]]
-    src = "images/header.jpg"
-    position = "center top"
+src = "images/header.jpg"
+position = "center top"
 
 [params]
-    homeTitle = "Adventurous Computing by Cyryl Płotnicki"
-    keywords = "programming, testing, tdd, rust, golang"
-    logo = "images/avatar.jpg"
-    showRelatedPosts = true
-    rss = true
+homeTitle = "Adventurous Computing by Cyryl Płotnicki"
+keywords = "programming, testing, tdd, rust, golang"
+logo = "images/avatar.jpg"
+showRelatedPosts = true
+rss = true
+selfHosted = true
 
 [[menu.main]]
 identifier = "donate"
@@ -51,11 +52,11 @@ name = "talks"
 url = "https://slides.cyplo.dev/"
 
 [Author]
-  name = "Cyryl Płotnicki"
-  website = "https://blog.cyplo.dev/"
-  email = "blog@cyplo.dev"
-  github = "cyplo"
-  gitlab = "cyplo"
-  twitter = "cyplo"
-  linkedin = "cyplo"
-  mastodon = "todon.nl/@cyplo"
+name = "Cyryl Płotnicki"
+website = "https://blog.cyplo.dev/"
+email = "blog@cyplo.dev"
+github = "cyplo"
+gitlab = "cyplo"
+twitter = "cyplo"
+linkedin = "cyplo"
+mastodon = "todon.nl/@cyplo"
