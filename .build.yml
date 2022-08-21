@@ -2,15 +2,16 @@ image: nixos/latest
 sources:
   - https://git.sr.ht/~cyplo/blog
 
+oauth: pages.sr.ht/PAGES:RW
+
 secrets:
   - 6c23a8c1-7a30-4a7e-b3b7-0171e898a7d3
   - 47d167ed-ef43-4515-9923-6954d34a4fab
 
-oauth: pages.sr.ht/PAGES:RW
+environment:
+  site: blog.cyplo.dev
 
 tasks:
-  - hwinfo: |
-      nix-shell -p lshw --run "lshw -short -quiet -sanitize -c memory -c processor"
   - fetch_tools: |
       cd blog
       nix-shell --pure --run 'date'
@@ -24,7 +25,7 @@ tasks:
       cd blog
       nix-shell --pure --run 'hugo --gc --minify'
   - package: |
-      tar -C blog/public -cvz . > site.tar.gz
-      ls -hal site.tar.gz
-  - sourcehut_upload: |
-      acurl -i -f https://pages.sr.ht/publish/cyplo.srht.site -Fcontent=@site.tar.gz
+      cd blog
+      tar -cvz . > ../site.tar.gz
+  - upload: |
+      hut pages publish -d $site site.tar.gz

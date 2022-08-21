@@ -19,6 +19,7 @@
               cacert
               git
               hugo
+              hut
             ];
         };
       });
