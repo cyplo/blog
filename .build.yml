@@ -23,14 +23,14 @@ tasks:
   - build: |
       cd blog
       nix-shell --pure --run 'hugo --gc --minify'
-  - netlify_publish: |
-      set +xv
-      cd blog
-      export NETLIFY_TOKEN=`cat ~/.netlify_token`
-      nix-shell --pure --keep NETLIFY_TOKEN --run 'netlify-deployer master 7a0944f0-cfd0-424b-8252-ca44fc950350 public'
   - package: |
       tar -C blog/public -cv . > site.tar
       gzip --best site.tar
       ls -hal site.tar.gz
   - sourcehut_upload: |
       acurl -i -f https://pages.sr.ht/publish/cyplo.srht.site -Fcontent=@site.tar.gz
+  - netlify_publish: |
+      set +xv
+      cd blog
+      export NETLIFY_TOKEN=`cat ~/.netlify_token`
+      nix-shell --pure --keep NETLIFY_TOKEN --run 'netlify-deployer master 7a0944f0-cfd0-424b-8252-ca44fc950350 public'

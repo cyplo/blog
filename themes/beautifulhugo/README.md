@@ -110,6 +110,8 @@ If you *don't* have the section `[Params.staticman]` in `config.toml`, you *won'
 
 To add Google Analytics, simply sign up to [Google Analytics](https://www.google.com/analytics/) to obtain your Google Tracking ID, and add this tracking ID to the `googleAnalytics` parameter in `config.toml`.
 
+Note that the Google Analytics tracking code will only be inserted into the page when the site isn't served on Hugo's built-in server, to prevent tracking from local testing environments.
+
 ### Commit SHA on the footer
 
 If the source of your site is in a Git repo, the SHA corresponding to the commit the site is built from can be shown on the footer. To do so, two site parameters `commit` has to be defined in the config file `config.toml`:
@@ -158,9 +160,9 @@ There are two extra shortcodes provided (along with the customized figure shortc
 This simply adds the html5 detail attribute, supported on all *modern* browsers. Use it like this:
 
 ```
-{{% details "This is the details title (click to expand)" %}}
+{{< details "This is the details title (click to expand)" >}}
 This is the content (hidden until clicked).
-{{% /details %}}
+{{< /details >}}
 ```
 
 #### Split
@@ -172,7 +174,7 @@ This adds a two column side-by-side environment (will turn into 1 col for narrow
 This is column 1.
 {{< column >}}
 This is column 2.
-{{< endcolumn >}}
+{{< endcolumns >}}
 ```
 
 ## About
