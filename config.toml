@@ -27,29 +27,40 @@ rss = true
 selfHosted = true
 
 [[menu.main]]
-identifier = "donate"
-name = " donate"
-url = "https://liberapay.com/cyplo/"
+identifier = "about"
+name = "about"
+url = "/pages/about"
+weight = 1
 
 [[menu.main]]
 identifier = "blog"
 name = "blog"
 url = "/posts"
+weight = 2
 
 [[menu.main]]
-identifier = "about"
-name = "about"
-url = "/pages/about"
+identifier = "donate"
+name = " donate"
+url = "https://liberapay.com/cyplo/"
+weight = 3
 
 [[menu.main]]
 identifier = "projects"
 name = "projects"
 url = "/pages/projects"
+weight = 4
 
 [[menu.main]]
 identifier = "talks"
 name = "talks"
 url = "https://slides.cyplo.dev/"
+weight = 5
+
+[[menu.main]]
+identifier = "git"
+name = "git"
+url = "https://git.cyplo.dev"
+weight = 6
 
 [Author]
 name = "Cyryl Płotnicki"
