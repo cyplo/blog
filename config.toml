@@ -59,7 +59,7 @@ weight = 5
 [[menu.main]]
 identifier = "git"
 name = "git"
-url = "https://git.cyplo.dev"
+url = "https://git.cyplo.dev/explore/repos"
 weight = 6
 
 [Author]
