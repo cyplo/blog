@@ -10,7 +10,7 @@ I can see someone bought the domain to host some psychedelic My Little Pony stuf
 
 I moved to [todon.nl](https://todon.nl/) when it got started and was quite happy there - check it out if you're looking for an instance !
 The itch was there though, what if I host my own small cozy place on the fediverse myself.
-I knew I didn't have as much time to do server admin, so I decided to start small, with a single user instance an use the power of NixOS to help with maintenance.
+I knew I didn't have as much time to do server admin, so I decided to start small, with a single user instance and use the power of NixOS to help with maintenance.
 
 Here is my full config - hosting Mastodon under the apex domain of [peninsula.industries](https://peninsula.industries/), Mastodon is running inside a systemd container and the config is using nix-sops to store the secrets.
 Few things that were unexpected/of note 
