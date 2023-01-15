@@ -30,6 +30,7 @@ Few things that were unexpected/of note
     ```
   - The below can use some refactoring, there is some weird repetition in some places still
   - You can find the newest version of this and see how it's being used in context on my [code hosting site](https://git.cyplo.dev/cyplo/dotfiles/src/branch/main/nixos/boxes/vpsfree1/mastodon.nix).
+  - Share your thoughts on the [fedi thread for this article](https://peninsula.industries/@cyplo/109692744740475900) !
 ```nix
 {
   config,

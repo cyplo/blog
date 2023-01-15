@@ -1,5 +1,5 @@
 {
-  description = "legdur: verify integrity of large directories over time";
+  description = "Adventurous computing, a blog by Cyryl Płotnicki";
   inputs = {
     utils.url = "github:numtide/flake-utils";
     flake-compat = {
@@ -11,15 +11,16 @@
   outputs = { self, nixpkgs, utils, flake-compat }:
     utils.lib.eachDefaultSystem (system:
       let pkgs = nixpkgs.legacyPackages."${system}";
-      in rec {
-        # `nix develop`
+      in {
         devShell = pkgs.mkShell {
-          nativeBuildInputs = with pkgs;
+          buildInputs = with pkgs;
             with pkgs.python38Packages; [
               cacert
               git
               hugo
               hut
+              ruby
+              bundler
             ];
         };
       });
