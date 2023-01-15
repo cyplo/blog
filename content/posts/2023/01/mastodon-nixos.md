@@ -14,7 +14,7 @@ I knew I didn't have as much time to do server admin, so I decided to start smal
 
 Here is my full config - hosting Mastodon under the apex domain of [peninsula.industries](https://peninsula.industries/), Mastodon is running inside a systemd container and the config is using nix-sops to store the secrets.
 Few things that were unexpected/of note 
-  - I needed to create the folder structure with correct permissions so that Mastodon starts normally. 
+  - I needed to create the folder structure with correct permissions so that Mastodon starts normally. This in turn required setting up users and groups both on host and inside the container so that their uids and gids match. 
   - I'm decrypting secrets on the host and making them available read-only to the container. Not sure if this is better or worse than having sops inside of the container, but I was having some trouble using sops module from there, so left it as it is for now - something to look into in the future
   - I needed to change the postgres port that is running inside of the Mastodon container because I had another postgres on this host already.   
   - If you're gonna be playing with this a lot, you might need to remove the container and its data and start from scratch - you can do so by doing:
