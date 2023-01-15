@@ -19,7 +19,7 @@ Few things that were unexpected/of note
   - I needed to change the postgres port that is running inside of the Mastodon container because I had another postgres on this host already.   
   - If you're gonna be playing with this a lot, you might need to remove the container and its data and start from scratch - you can do so by doing:
     - remove the container definition and `nixos-rebuild switch`
-    - rm -fr /var/lib/nixos-containers/mastodon/ *
+    - `rm -fr /var/lib/nixos-containers/mastodon/`
   - to use Mastodon CLI you need to be running it as a correct user and within the Nix-changed env:
     ```bash
     nixos-container root-login mastodon
