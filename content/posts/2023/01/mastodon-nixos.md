@@ -4,6 +4,11 @@ date: 2023-01-15
 tags: [nix, fediverse]
 ---
 
+```
+If you're here to learn about how to set up a Mastodon server on NixOS the easy way - you can use services.mastodon.enable = true; and take it from there !
+This post does describe a bit more convoluted setup than that.
+```
+
 I've been on the fediverse on and off since [friendi.ca](https://friendi.ca/) started to be a thing.
 I remember hosting an instance at ponk.pink that suddenly got popular and the server melted away while I was apologising to the users.
 I can see someone bought the domain to host some psychedelic My Little Pony stuff, I'm all for that.
@@ -124,8 +129,6 @@ in {
     '';
     serviceConfig = {
       Type = "oneshot";
-      ProtectSystem = "strict";
-      ReadWritePaths = path;
     };
     before = ["container@mastodon.service"];
   };
