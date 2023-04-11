@@ -17,18 +17,16 @@ I was in both leadership and individual contributor roles, I have respect for al
 
 I like testing, I taught various aspects of TDD in an apprenticeship course.
 
-## Day jobs
+**Head of Engineering: Core** at Form3, _May 2019 - now_
 
-**Head of Core Engineering** at Form3, _May 2019 - now_
-
-I am responsible for 3 engineering teams, each having its own technical leadership structure. I work closely with product leadership on the vision for the shared services at the organisation and with other team leads and section heads on execution planning. I help with establishing standards across multiple teams while providing architectural and technical support. I review the more sensitive code & documentation contributions. I guide people through their growth as team leaders and individual developers alike.
+I am responsible for 6 engineering teams, an architect and an SRE Lead. We are creating inter-bank payment distributed systems in Go and Java. Each team has its own technical leadership structure and I oversee those leaders myself. I work closely with product leadership on the vision of the shared services at the organisation and with other team leads and section heads on execution planning. I help with establishing standards across multiple teams while providing architectural and technical support. I review the more sensitive code & documentation contributions. I guide people through their growth as team leaders and individual developers alike.
 
 **Software Engineer** at balena, _October 2018 - May 2019_
 
 I worked remotely on **Rust** crates compiled into NPM packages through the power of **WASM**.
 As all of the above is on the bleeding edge - I find, report and fix bugs throughout the ecosystem.
 
-**Software Craftsman** (Consultant) at Codurance, _January 2017 - October 2018_
+**Software Craftsman** at Codurance, _January 2017 - October 2018_
 
 Helping client teams grow - working within software teams and teaching technical concepts as well as improving the process.
 Running workshops (e.g. Legacy Code Retreat, advanced git, **TDD**).
